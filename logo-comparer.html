@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparaison Logos — Traitement des Nuisibles</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a1628; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .sub { color: #94a3b8; margin-bottom: 2.5rem; font-size: 1rem; }
+  .grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+  .card { background: #1e293b; border-radius: 16px; padding: 2rem; width: 340px; text-align: center; border: 2px solid transparent; transition: all 0.3s; cursor: pointer; }
+  .card:hover { border-color: #3b82f6; transform: translateY(-4px); }
+  .card.picked { border-color: #22c55e; background: #1a2e1a; }
+  .card h3 { font-size: 1.2rem; margin-bottom: 1rem; color: #e2e8f0; }
+  .logo-wrap { height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
+  .logo-wrap img { max-height: 50px; max-width: 280px; }
+  .preview { margin-top: 1rem; }
+  .preview img { width: 100%; border-radius: 8px; border: 1px solid #334155; }
+  .btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.5rem; border-radius: 8px; background: #3b82f6; color: #fff; text-decoration: none; font-size: 0.9rem; }
+  .btn:hover { background: #2563eb; }
+  .voted { display: none; margin-top: 1.5rem; padding: 1rem; background: #1e3a5f; border-radius: 8px; font-size: 0.9rem; color: #93c5fd; }
+</style>
+</head>
+<body>
+  <h1>Choisis ton logo</h1>
+  <p class="sub">Ouvre les 3 pages dans des onglets séparés et compare</p>
+  <div class="grid">
+    <div class="card" id="c1">
+      <h3>Logo V1</h3>
+      <div class="logo-wrap"><img src="/images/logo-v1.jpg" alt="Logo V1"></div>
+      <a class="btn" href="/logo-v1.html" target="_blank">Voir le site →</a>
+    </div>
+    <div class="card" id="c2">
+      <h3>Logo V2</h3>
+      <div class="logo-wrap"><img src="/images/logo-v2.jpg" alt="Logo V2"></div>
+      <a class="btn" href="/logo-v2.html" target="_blank">Voir le site →</a>
+    </div>
+    <div class="card" id="c3">
+      <h3>Logo V3</h3>
+      <div class="logo-wrap"><img src="/images/logo-v3.jpg" alt="Logo V3"></div>
+      <a class="btn" href="/logo-v3.html" target="_blank">Voir le site →</a>
+    </div>
+  </div>
+  <p style="margin-top:2rem;color:#64748b;font-size:0.85rem;">Dis-moi lequel tu préfères et je le mets en place !</p>
+</body>
+</html>

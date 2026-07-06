@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140">
+  <rect width="600" height="140" fill="white" rx="8"/>
+  <text x="30" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" fill="#0a1628" letter-spacing="2">DÉRATISATION</text>
+  <text x="32" y="105" font-family="Arial, sans-serif" font-size="16" fill="#64748b" letter-spacing="5">FRANCE</text>
+  <line x1="30" y1="115" x2="210" y2="115" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+  <text x="224" y="110" font-family="Georgia, serif" font-size="14" fill="#f59e0b" font-weight="600">.fr</text>
+</svg>

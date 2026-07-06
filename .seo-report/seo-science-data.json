@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {"name": "Ahrefs - 107 SEO Statistics (juin 2026)", "url": "https://ahrefs.com/blog/seo-statistics/"},
+    {"name": "Backlinko - Google 200 Ranking Factors (mai 2025)", "url": "https://backlinko.com/google-ranking-factors"},
+    {"name": "First Page Sage - CTR Study (2025)", "url": "https://www.firstpagesage.com/reports"},
+    {"name": "BrightEdge - Search Engine Referrals", "url": "https://www.brightedge.com"},
+    {"name": "SparkToro - Zero-Click Searches", "url": "https://sparktoro.com/blog/2024-zero-click-search-study/"},
+    {"name": "Google Search Central - SEO Guidelines", "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"},
+    {"name": "Google Quality Raters Guidelines (E-E-A-T)", "url": "https://static.googleusercontent.com/media/guidelines.raterhub.com/en/searchqualityevaluatorguidelines.pdf"}
+  ],
+  "top_level_stats": {
+    "traffic_origin": "68% des experiences en ligne commencent par un moteur de recherche (BrightEdge)",
+    "google_market_share": "90.39% part de marche mondiale des moteurs de recherche (StatCounter via Ahrefs 2026)",
+    "google_referrals": "63.41% du trafic US vient de Google (SparkToro via Ahrefs 2026)",
+    "seo_vs_social": "Le SEO genere 1000%+ plus de trafic que les reseaux sociaux organiques (BrightEdge)",
+    "zero_traffic_pages": "96.55% des pages web recoivent zero trafic organique de Google (Ahrefs 2026)",
+    "ai_overviews_ctr_drop": "Les AI Overviews reduisent le CTR du #1 organique de 58% (Ahrefs 2026)"
+  },
+  "ctr_data": {
+    "position_1": "9.28% CTR moyen (ResearchGate via Ahrefs 2026)",
+    "position_2": "5.82% CTR moyen (ResearchGate via Ahrefs 2026)",
+    "position_3": "3.11% CTR moyen (ResearchGate via Ahrefs 2026)",
+    "zero_click_desktop": "61.5% des recherches desktop = zero clic (SparkToro via Ahrefs 2026)",
+    "zero_click_mobile": "34.4% des recherches mobile = zero clic (SparkToro via Ahrefs 2026)",
+    "first_page_sage_ctr_position_1": "~39.8% pour la position #1 (First Page Sage 2025)"
+  },
+  "ranking_factors_by_importance": [
+    {"rank": 1, "factor": "Quality content", "detail": "Le facteur #1 selon Backlinko. Google valorise le contenu informatif, pertinent, et de haute qualite"},
+    {"rank": 2, "factor": "Backlinks", "detail": "Les backlinks de qualite agissent comme des votes de confiance. Correlation directe avec le classement"},
+    {"rank": 3, "factor": "Technical SEO", "detail": "Vitesse, mobile-friendliness, crawlability, indexation. Fondation technique indispensable"},
+    {"rank": 4, "factor": "Keyword optimization", "detail": "Mots-cles dans title tag, H1, meta-description, URL. Alignement avec l'intention de recherche"},
+    {"rank": 5, "factor": "User Experience (UX)", "detail": "Core Web Vitals (LCP, FID, CLS). Navigation intuitive. Temps de chargement < 2.5s"},
+    {"rank": 6, "factor": "Search intent", "detail": "Google evalue si le contenu correspond a l'intention derriere la requete (Google Search Central)"},
+    {"rank": 7, "factor": "E-E-A-T", "detail": "Experience, Expertise, Authoritativeness, Trustworthiness. Essentiel pour sites YMYL (Your Money Your Life)"},
+    {"rank": 8, "factor": "Mobile-friendly", "detail": "Indexation mobile-first. Design responsive obligatoire depuis 2024"},
+    {"rank": 9, "factor": "Local SEO", "detail": "Google Business Profile, avis clients, NAP (Name/Address/Phone) coherent sur tout le web"},
+    {"rank": 10, "factor": "Brand signals", "detail": "Recherches de marque, mentions hors-lien, presence dans les annuaires professionnels"}
+  ],
+  "content_length_study": {
+    "avg_top10": "Les pages du Top 10 ont en moyenne 1442 mots (Ahrefs)",
+    "avg_top3": "Le Top 3 a en moyenne 1,882 mots (Ahrefs)",
+    "flesch_score": "Score Flesch Reading Ease ~64.6 pour les pages les mieux classees (Backlinko)",
+    "readability": "Niveau lycee/universite recommande pour le classement (Backlinko)"
+  },
+  "keyword_stats": {
+    "long_tail_share": "92.42% des mots-cles recoivent 10 recherches/mois ou moins (Ahrefs)",
+    "transactional_better": "Les mots-cles transactionnels convertissent 2-3x mieux que les informationnels (Backlinko)",
+    "keyword_in_title": "Correlation forte: mot-cle exact dans le title tag ameliore le classement (Ahrefs)",
+    "keyword_in_h1": "68% des pages classees ont le mot-cle exact dans le H1 (Ahrefs)"
+  },
+  "local_seo_stats": {
+    "near_me_growth": "Les recherches 'pres de chez moi' ont augmente de 500% (donnees Google via Ahrefs 2026)",
+    "local_pack_appearance": "Le Local Pack Google apparait dans 33% des recherches (Ahrefs 2026)",
+    "gmb_reviews_impact": "Les entreprises avec 25+ avis Google recoivent 2x plus de clics (BrightLocal 2024)",
+    "local_intent_purchase": "78% des recherches avec intention locale menent a un achat en magasin (Google)"
+  },
+  "technical_seo": {
+    "page_speed_impact": "53% des utilisateurs mobiles abandonnent si le chargement depasse 3 secondes (Google)",
+    "core_web_vitals_boost": "Les pages qui passent les Core Web Vitals ont 2x plus de chances d'etre en position #1 (Ahrefs)",
+    "https_required": "HTTPS est un signal de classement confirme (Google Search Central)",
+    "mobile_first_index": "Google indexe en mobile-first depuis 2024 (Google)",
+    "schema_markup_boost": "Les pages avec schema.org ont 4x plus de chances d'obtenir un featured snippet (Ahrefs)"
+  },
+  "backlink_study": {
+    "pages_no_backlinks": "66.31% des pages n'ont aucun backlink (Ahrefs)",
+    "dr_correlation": "Correlation DR/trafic = 0.33 (moderee) (Ahrefs)",
+    "referring_domains": "3+ domaines referents = 3x plus de trafic (Ahrefs)",
+    "internal_links_boost": "Les pages avec un maillage interne fort rankent mieux (Ahrefs)"
+  }
+}

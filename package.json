@@ -1,0 +1,18 @@
+{
+  "name": "deratisation",
+  "version": "2.0.0",
+  "private": true,
+  "description": "- **Frontend:** HTML/CSS/JS vanille (pas de framework) - **Backend:** Vercel Serverless (API Routes) - **Email:** Mailgun (5 000 emails/mois gratuits) - **Base de données:** Supabase (optionnel — fonctionne aussi en mémoire) - **Admin:** Dashboard leads + partenaires",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@libsql/client": "^0.17.3",
+    "resend": "^6.12.3"
+  }
+}

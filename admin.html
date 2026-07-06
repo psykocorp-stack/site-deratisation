@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administration — Traitement des Nuisibles</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 40px;
+    }
+    .login-container h1 {
+      color: #f0f6fc;
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    .login-container p {
+      color: #8b949e;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 10px 14px;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #c9d1d9;
+      font-size: 14px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    .login-container input:focus {
+      outline: none;
+      border-color: #58a6ff;
+      box-shadow: 0 0 0 3px rgba(88,166,255,0.15);
+    }
+    .login-error {
+      background: #da363330;
+      color: #f85149;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-bottom: 16px;
+      display: none;
+    }
+  </style>
+</head>
+<body class="admin-body">
+  <!-- Login Screen -->
+  <div class="login-container" id="loginScreen">
+    <h1>Traitement des Nuisibles</h1>
+    <p>Accès administration sécurisé</p>
+    <div class="login-error" id="loginError">Mot de passe incorrect</div>
+    <input type="password" id="loginPassword" placeholder="Mot de passe admin" onkeydown="if(event.key==='Enter')handleLogin()">
+    <button class="filter-btn filter-btn-primary" style="width:100%;padding:10px;font-size:14px" onclick="handleLogin()">Se connecter</button>
+  </div>
+
+  <!-- Dashboard (hidden until login) -->
+  <div id="dashboardScreen" style="display:none">
+    <header class="admin-header">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:20px">🐀</span>
+        <span style="font-weight:600;font-size:15px;color:#fff">Traitement des Nuisibles</span>
+        <span style="font-size:11px;color:var(--admin-muted);background:var(--admin-bg);padding:2px 8px;border-radius:4px">Admin</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <a href="/admin/settings.html" style="background:transparent;border:1px solid var(--admin-border);color:var(--admin-muted);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:12px;text-decoration:none">⚙️ Paramètres</a>
+        <span id="notifBadge" style="display:none;background:#e74c3c;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:600"></span>
+        <button onclick="handleLogout()" style="background:transparent;border:1px solid var(--admin-border);color:var(--admin-muted);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:12px">Déconnexion</button>
+      </div>
+    </header>
+
+    <div class="admin-main">
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" onclick="switchTab('leads')" id="tabLeads">📋 Leads</button>
+        <button class="tab" onclick="switchTab('partenaires')" id="tabPartenaires">🤝 Partenaires</button>
+      </div>
+
+      <!-- ====== Leads Tab ====== -->
+      <div class="section active" id="sectionLeads">
+        <div class="admin-grid" id="statsGrid">
+          <div class="admin-stat">
+            <div class="label">Total</div>
+            <div class="value" id="statTotal"><span class="skeleton" style="display:inline-block;width:40px;height:28px">&nbsp;</span></div>
+          </div>
+          <div class="admin-stat">
+            <div class="label">Nouveaux</div>
+            <div class="value" id="statWaiting"><span class="skeleton" style="display:inline-block;width:40px;height:28px">&nbsp;</span></div>
+          </div>
+          <div class="admin-stat">
+            <div class="label">Attribués</div>
+            <div class="value" id="statAttribue"><span class="skeleton" style="display:inline-block;width:40px;height:28px">&nbsp;</span></div>
+          </div>
+          <div class="admin-stat">
+            <div class="label">Traités</div>
+            <div class="value" id="statTraite"><span class="skeleton" style="display:inline-block;width:40px;height:28px">&nbsp;</span></div>
+          </div>
+          <div class="admin-stat">
+            <div class="label">Aujourd'hui</div>
+            <div class="value" id="statToday"><span class="skeleton" style="display:inline-block;width:40px;height:28px">&nbsp;</span></div>
+          </div>
+        </div>
+
+        <div class="admin-filters">
+          <select id="filterStatut" onchange="applyFilters()">
+            <option value="">Tous les statuts</option>
+            <option value="nouveau">Nouveau</option>
+            <option value="attribué">Attribué</option>
+            <option value="traité">Traité</option>
+            <option value="refusé">Refusé</option>
+          </select>
+          <select id="filterNuisible" onchange="applyFilters()">
+            <option value="">Tous les nuisibles</option>
+          </select>
+          <select id="filterDepartement" onchange="applyFilters()">
+            <option value="">Tous les départements</option>
+          </select>
+          <button class="filter-btn filter-btn-secondary" onclick="exportCSV()" style="margin-left:auto">📥 Export CSV</button>
+          <button class="filter-btn filter-btn-primary" onclick="refreshLeads()" style="margin-left:4px">🔄 Actualiser</button>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Nom</th>
+                <th>Téléphone</th>
+                <th>Email</th>
+                <th>Nuisible</th>
+                <th>Lieu</th>
+                <th>Dépt</th>
+                <th>Urg</th>
+                <th>Statut</th>
+                <th>Partenaire</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="leadsBody">
+              <tr><td colspan="11" style="text-align:center;padding:40px;color:#8b949e">Chargement...</td></tr>
+            </tbody>
+          </table>
+          <div class="admin-empty" id="emptyState" style="display:none">
+            <div class="icon">📭</div>
+            <p>Aucun lead pour le moment</p>
+          </div>
+        </div>
+
+        <div class="admin-seed">
+          <p>Générer des leads de démonstration</p>
+          <button onclick="seedLeads()">🎲 Leads de démo</button>
+        </div>
+      </div>
+
+      <!-- ====== Partenaires Tab ====== -->
+      <div class="section" id="sectionPartenaires">
+        <div class="partner-form">
+          <h3 style="margin:0 0 12px 0;font-size:15px;font-weight:600">➕ Ajouter un partenaire</h3>
+          <div class="form-grid">
+            <div><label>Nom entreprise</label><input id="pNom" placeholder="Psyko Corp"></div>
+            <div><label>Email</label><input id="pEmail" placeholder="contact@psykocorp.com"></div>
+            <div><label>Téléphone</label><input id="pTel" placeholder="0612345678"></div>
+            <div><label>Telegram ID (optionnel)</label><input id="pTelegram" placeholder="2146505139"></div>
+            <div><label>Départements</label><input id="pDepts" placeholder="75,92,93,94"></div>
+            <div><label>Nuisibles</label><input id="pNuisibles" placeholder="Rats,Souris,Cafards"></div>
+          </div>
+          <button onclick="addPartenaire()" class="filter-btn filter-btn-primary">Ajouter le partenaire</button>
+        </div>
+        <div id="partenairesList">
+          <p style="color:var(--admin-muted);font-size:13px">Chargement...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+/* ============================================================
+   DÉRATISATION.fr — Design System: ENERGETIC Inspired
+   Orange vif, bords épais, police Limelight, vibes de confiance
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --ener-primary: #EA580B;
+  --ener-primary-dark: #c2410c;
+  --ener-secondary: #F59E0B;
+  --ener-bg: #FFEDD5;
+  --ener-surface: #FDBA74;
+  --ener-text: #EA580C;
+  --ener-neutral: #FDBA74;
+  --ener-dark: #1c1917;
+  --ener-white: #ffffff;
+  --ener-success: #16A34A;
+  --ener-danger: #DC2626;
+  --ener-warning: #D97706;
+  --ener-font: 'Inter', system-ui, -apple-system, sans-serif;
+  --ener-display: 'Limelight', cursive;
+  --ener-shadow: rgba(234,88,11,0.2);
+}
+
+body {
+  font-family: var(--ener-font);
+  background: var(--ener-white);
+  color: var(--ener-dark);
+}
+
+/* --- 1. HEADINGS with Limelight display --- */
+h1, .hero-title, .hero h1 {
+  font-family: var(--ener-display) !important;
+  font-size: 3rem !important;
+  font-weight: 400 !important;
+  line-height: 1.15 !important;
+  color: var(--ener-white) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+}
+
+h2, .section-title {
+  font-family: var(--ener-display) !important;
+  font-size: 2.2rem !important;
+  font-weight: 400 !important;
+  color: var(--ener-dark) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.01em;
+}
+
+h3, .card-title, .solution-title {
+  font-family: var(--ener-font);
+  font-weight: 700 !important;
+  font-size: 1.25rem;
+  color: var(--ener-dark);
+}
+
+p, .hero-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* --- 2. BOLD BORDERS & SHAPES --- */
+.card, .pricing-card, .solution-card, .trust-card, .service-card {
+  background: var(--ener-white) !important;
+  border: 3px solid var(--ener-dark) !important;
+  border-radius: 0 !important;
+  box-shadow: 6px 6px 0 var(--ener-dark) !important;
+  transition: all 0.2s ease !important;
+}
+
+.card:hover, .pricing-card:hover, .solution-card:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 8px 8px 0 var(--ener-dark) !important;
+}
+
+/* Featured / Popular */
+.card.featured, .pricing-card.featured, .popular-card {
+  border: 3px solid var(--ener-primary) !important;
+  box-shadow: 6px 6px 0 var(--ener-primary) !important;
+}
+
+.popular-badge {
+  background: var(--ener-primary) !important;
+  color: white;
+  font-family: var(--ener-font);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 4px 14px;
+  letter-spacing: 0.08em;
+  border: 2px solid var(--ener-dark);
+  display: inline-block;
+}
+
+/* --- 3. BUTTONS --- */
+.btn, .btn-primary, .cta-button, button[type="submit"] {
+  background: var(--ener-primary) !important;
+  color: white !important;
+  border: 3px solid var(--ener-dark) !important;
+  border-radius: 0 !important;
+  padding: 10px 28px !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  box-shadow: 4px 4px 0 var(--ener-dark) !important;
+  transition: all 0.15s ease !important;
+}
+
+.btn:hover, .btn-primary:hover, .cta-button:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 6px 6px 0 var(--ener-dark) !important;
+  background: var(--ener-primary-dark) !important;
+}
+
+.btn:active {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 2px 2px 0 var(--ener-dark) !important;
+}
+
+.btn-secondary, .btn-outline {
+  background: var(--ener-white) !important;
+  color: var(--ener-dark) !important;
+  border: 3px solid var(--ener-dark) !important;
+  box-shadow: 4px 4px 0 var(--ener-dark) !important;
+}
+
+.btn-secondary:hover {
+  background: var(--ener-bg) !important;
+}
+
+.btn-urgent {
+  background: var(--ener-danger) !important;
+  box-shadow: 4px 4px 0 #991b1b !important;
+  border-color: #991b1b !important;
+}
+
+/* --- 4. BADGES --- */
+.badge, .hero-badge, .stat-badge {
+  background: var(--ener-bg) !important;
+  color: var(--ener-primary) !important;
+  font-weight: 700 !important;
+  border: 2px solid var(--ener-primary) !important;
+  border-radius: 0 !important;
+  padding: 4px 14px !important;
+  font-size: 0.8rem;
+}
+
+.badge-success {
+  background: var(--ener-success) !important;
+  color: white !important;
+  border: 2px solid var(--ener-dark) !important;
+  border-radius: 0 !important;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+/* --- 5. HERO --- */
+.hero {
+  position: relative;
+  background: var(--ener-dark) !important;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(28,25,23,0.85) 0%,
+    rgba(234,88,11,0.3) 50%,
+    rgba(28,25,23,0.85) 100%
+  );
+  z-index: 1;
+}
+
+/* Content above overlay */
+.hero > * { position: relative; z-index: 2; }
+
+/* Stats bar */
+.stats-section {
+  background: var(--ener-primary) !important;
+  color: white;
+  border-top: 3px solid var(--ener-dark);
+  border-bottom: 3px solid var(--ener-dark);
+}
+
+.stats-section .stat-number {
+  font-family: var(--ener-display);
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* --- 6. NAVIGATION --- */
+nav, header {
+  background: var(--ener-white) !important;
+  border-bottom: 3px solid var(--ener-dark) !important;
+}
+
+nav a, .nav-link {
+  font-weight: 700 !important;
+  color: var(--ener-dark) !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+nav a:hover { color: var(--ener-primary) !important; }
+
+/* --- 7. INPUTS --- */
+input, select, textarea, .form-input {
+  border: 3px solid var(--ener-dark) !important;
+  border-radius: 0 !important;
+  padding: 12px 16px !important;
+  font-size: 0.95rem;
+  background: var(--ener-white);
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--ener-primary) !important;
+  box-shadow: 4px 4px 0 var(--ener-primary) !important;
+}
+
+label, .form-label {
+  font-weight: 700;
+  color: var(--ener-dark);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+/* --- 8. SECTION ALTERNATION --- */
+.section-light { background: var(--ener-white); }
+.section-alt {
+  background: var(--ener-bg);
+  border-top: 3px solid var(--ener-dark);
+  border-bottom: 3px solid var(--ener-dark);
+}
+
+/* --- 9. PRICE DISPLAY --- */
+.price {
+  font-family: var(--ener-display);
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--ener-primary);
+}
+
+.price small {
+  font-family: var(--ener-font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: #888;
+}
+
+/* --- 10. FOOTER --- */
+footer, .footer {
+  background: var(--ener-dark) !important;
+  color: rgba(255,255,255,0.85);
+  border-top: 3px solid var(--ener-primary);
+}
+
+footer a { color: var(--ener-secondary); font-weight: 600; }
+footer a:hover { color: white; }
+
+/* --- 11. DECORATIVE --- */
+.ener-accent-bar {
+  height: 4px;
+  background: var(--ener-primary);
+  width: 60px;
+  margin: 8px 0;
+}
+
+.ener-dot-grid {
+  background-image: radial-gradient(var(--ener-primary) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  opacity: 0.08;
+}
+
+/* --- 12. ANIMATIONS --- */
+@keyframes energBounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes energSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: energSlideUp 0.4s ease-out forwards;
+}
+
+.hero-title { animation: energSlideUp 0.5s ease-out both; }
+.hero-subtitle { animation: energSlideUp 0.5s ease-out 0.1s both; }
+.hero-badges { animation: energSlideUp 0.5s ease-out 0.15s both; }
+.hero-cta { animation: energSlideUp 0.5s ease-out 0.25s both; }

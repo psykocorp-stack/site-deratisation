@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140">
+  <rect width="600" height="140" fill="white" rx="8"/>
+  <!-- Shield minimal -->
+  <g transform="translate(35,20)">
+    <path d="M40 0 L100 0 L100 65 Q100 100 40 120 Q-20 100 -20 65 L-20 0 Z"
+          fill="none" stroke="#0a1628" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Checkmark à l'intérieur -->
+    <path d="M15 60 L35 80 L70 35" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="140" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" fill="#0a1628" letter-spacing="1">DÉRATISATION</text>
+  <text x="140" y="100" font-family="Arial, sans-serif" font-size="14" fill="#64748b" letter-spacing="3">EXPERT · CONTRÔLE NUISIBLES · ÎLE-DE-FRANCE</text>
+  <text x="490" y="72" font-family="Georgia, serif" font-size="14" fill="#f59e0b" font-weight="600">.fr</text>
+</svg>

@@ -1,0 +1,464 @@
+{
+  "pexels-3985320.jpg": [
+    {
+      "label": "shower cap",
+      "confidence": 22.9
+    },
+    {
+      "label": "bath towel",
+      "confidence": 3.8
+    },
+    {
+      "label": "face powder",
+      "confidence": 2.6
+    },
+    {
+      "label": "diaper",
+      "confidence": 1.9
+    },
+    {
+      "label": "bra",
+      "confidence": 1.6
+    }
+  ],
+  "pexels-4120603.jpg": [
+    {
+      "label": "through arch bridge",
+      "confidence": 4.7
+    },
+    {
+      "label": "pole",
+      "confidence": 4.6
+    },
+    {
+      "label": "abacus",
+      "confidence": 2.8
+    },
+    {
+      "label": "crane (machine)",
+      "confidence": 2.7
+    },
+    {
+      "label": "suspension bridge",
+      "confidence": 2.1
+    }
+  ],
+  "pexels-4239030.jpg": [
+    {
+      "label": "dome",
+      "confidence": 25.4
+    },
+    {
+      "label": "church",
+      "confidence": 9.5
+    },
+    {
+      "label": "monastery",
+      "confidence": 6.9
+    },
+    {
+      "label": "bell-cot",
+      "confidence": 1.8
+    },
+    {
+      "label": "palace",
+      "confidence": 0.9
+    }
+  ],
+  "pexels-4558690.jpg": [
+    {
+      "label": "confectionery store",
+      "confidence": 61.5
+    },
+    {
+      "label": "pan flute",
+      "confidence": 2.8
+    },
+    {
+      "label": "grocery store",
+      "confidence": 2.4
+    },
+    {
+      "label": "tobacco shop",
+      "confidence": 1.2
+    },
+    {
+      "label": "drumstick",
+      "confidence": 1.2
+    }
+  ],
+  "pexels-4658950.jpg": [
+    {
+      "label": "shoal",
+      "confidence": 34.8
+    },
+    {
+      "label": "seashore",
+      "confidence": 13.9
+    },
+    {
+      "label": "lakeshore",
+      "confidence": 2.9
+    },
+    {
+      "label": "catamaran",
+      "confidence": 1.5
+    },
+    {
+      "label": "promontory",
+      "confidence": 1.2
+    }
+  ],
+  "pexels-5034757.jpg": [
+    {
+      "label": "balloon",
+      "confidence": 11.0
+    },
+    {
+      "label": "lakeshore",
+      "confidence": 5.8
+    },
+    {
+      "label": "volcano",
+      "confidence": 3.2
+    },
+    {
+      "label": "lighthouse",
+      "confidence": 2.8
+    },
+    {
+      "label": "rapeseed",
+      "confidence": 2.1
+    }
+  ],
+  "pexels-5591582.jpg": [
+    {
+      "label": "toilet seat",
+      "confidence": 15.2
+    },
+    {
+      "label": "sink",
+      "confidence": 5.5
+    },
+    {
+      "label": "wall clock",
+      "confidence": 2.1
+    },
+    {
+      "label": "analog clock",
+      "confidence": 1.7
+    },
+    {
+      "label": "trench coat",
+      "confidence": 1.6
+    }
+  ],
+  "pexels-5879489.jpg": [
+    {
+      "label": "spotlight",
+      "confidence": 7.9
+    },
+    {
+      "label": "bubble",
+      "confidence": 3.5
+    },
+    {
+      "label": "solar thermal collector",
+      "confidence": 2.4
+    },
+    {
+      "label": "stupa",
+      "confidence": 2.4
+    },
+    {
+      "label": "missile",
+      "confidence": 2.1
+    }
+  ],
+  "pexels-5900197.jpg": [
+    {
+      "label": "cabbage",
+      "confidence": 8.5
+    },
+    {
+      "label": "sarong",
+      "confidence": 6.9
+    },
+    {
+      "label": "pajamas",
+      "confidence": 3.3
+    },
+    {
+      "label": "kimono",
+      "confidence": 2.9
+    },
+    {
+      "label": "overskirt",
+      "confidence": 2.5
+    }
+  ],
+  "pexels-6334096.jpg": [
+    {
+      "label": "cliff",
+      "confidence": 9.6
+    },
+    {
+      "label": "seashore",
+      "confidence": 8.4
+    },
+    {
+      "label": "valley",
+      "confidence": 5.8
+    },
+    {
+      "label": "lakeshore",
+      "confidence": 5.5
+    },
+    {
+      "label": "volcano",
+      "confidence": 5.4
+    }
+  ],
+  "pexels-6415568.jpg": [
+    {
+      "label": "suit",
+      "confidence": 7.0
+    },
+    {
+      "label": "bow tie",
+      "confidence": 4.7
+    },
+    {
+      "label": "Windsor tie",
+      "confidence": 4.0
+    },
+    {
+      "label": "ocarina",
+      "confidence": 3.1
+    },
+    {
+      "label": "mobile phone",
+      "confidence": 2.9
+    }
+  ],
+  "pexels-6849462.jpg": [
+    {
+      "label": "window shade",
+      "confidence": 3.3
+    },
+    {
+      "label": "unicycle",
+      "confidence": 1.5
+    },
+    {
+      "label": "Rottweiler",
+      "confidence": 1.5
+    },
+    {
+      "label": "window screen",
+      "confidence": 1.3
+    },
+    {
+      "label": "Malinois",
+      "confidence": 1.2
+    }
+  ],
+  "pexels-7123852.jpg": [
+    {
+      "label": "potter's wheel",
+      "confidence": 5.2
+    },
+    {
+      "label": "beaker",
+      "confidence": 3.9
+    },
+    {
+      "label": "measuring cup",
+      "confidence": 1.8
+    },
+    {
+      "label": "lab coat",
+      "confidence": 1.8
+    },
+    {
+      "label": "sawmill",
+      "confidence": 1.7
+    }
+  ],
+  "pexels-7233330.jpg": [
+    {
+      "label": "banana",
+      "confidence": 18.1
+    },
+    {
+      "label": "spaghetti squash",
+      "confidence": 11.8
+    },
+    {
+      "label": "eggnog",
+      "confidence": 2.7
+    },
+    {
+      "label": "lemon",
+      "confidence": 2.1
+    },
+    {
+      "label": "orange",
+      "confidence": 0.9
+    }
+  ],
+  "pexels-7747931.jpg": [
+    {
+      "label": "valley",
+      "confidence": 14.4
+    },
+    {
+      "label": "promontory",
+      "confidence": 4.6
+    },
+    {
+      "label": "lakeshore",
+      "confidence": 3.7
+    },
+    {
+      "label": "cliff",
+      "confidence": 2.8
+    },
+    {
+      "label": "geyser",
+      "confidence": 1.7
+    }
+  ],
+  "pexels-8172912.jpg": [
+    {
+      "label": "tights",
+      "confidence": 16.4
+    },
+    {
+      "label": "tank suit",
+      "confidence": 13.0
+    },
+    {
+      "label": "swimsuit",
+      "confidence": 2.4
+    },
+    {
+      "label": "balance beam",
+      "confidence": 2.2
+    },
+    {
+      "label": "pole",
+      "confidence": 2.1
+    }
+  ],
+  "pexels-8371452.jpg": [
+    {
+      "label": "lakeshore",
+      "confidence": 19.7
+    },
+    {
+      "label": "fountain",
+      "confidence": 7.0
+    },
+    {
+      "label": "castle",
+      "confidence": 3.0
+    },
+    {
+      "label": "palace",
+      "confidence": 2.2
+    },
+    {
+      "label": "boathouse",
+      "confidence": 1.5
+    }
+  ],
+  "pexels-8570146.jpg": [
+    {
+      "label": "flagpole",
+      "confidence": 12.0
+    },
+    {
+      "label": "crane (machine)",
+      "confidence": 5.7
+    },
+    {
+      "label": "ocean liner",
+      "confidence": 4.8
+    },
+    {
+      "label": "dome",
+      "confidence": 3.5
+    },
+    {
+      "label": "traffic light",
+      "confidence": 3.1
+    }
+  ],
+  "pexels-8714156.jpg": [
+    {
+      "label": "picket fence",
+      "confidence": 12.8
+    },
+    {
+      "label": "sulphur butterfly",
+      "confidence": 8.1
+    },
+    {
+      "label": "monarch butterfly",
+      "confidence": 7.0
+    },
+    {
+      "label": "small white",
+      "confidence": 6.9
+    },
+    {
+      "label": "bee",
+      "confidence": 6.7
+    }
+  ],
+  "pexels-9456207.jpg": [
+    {
+      "label": "Egyptian Mau",
+      "confidence": 12.8
+    },
+    {
+      "label": "Mexican hairless dog",
+      "confidence": 10.1
+    },
+    {
+      "label": "zebra",
+      "confidence": 4.4
+    },
+    {
+      "label": "tabby cat",
+      "confidence": 2.8
+    },
+    {
+      "label": "Basenji",
+      "confidence": 1.4
+    }
+  ],
+  "pexels-9986202.jpg": [
+    {
+      "label": "black swan",
+      "confidence": 42.2
+    },
+    {
+      "label": "goose",
+      "confidence": 0.7
+    },
+    {
+      "label": "lakeshore",
+      "confidence": 0.3
+    },
+    {
+      "label": "duck",
+      "confidence": 0.3
+    },
+    {
+      "label": "American coot",
+      "confidence": 0.2
+    }
+  ]
+}

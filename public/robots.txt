@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deratisation.vercel.app/sitemap.xml

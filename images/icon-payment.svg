@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#f59e0b" fill-opacity="0.12"/>
+  <circle cx="24" cy="24" r="12" stroke="#f59e0b" stroke-width="1.8" fill="none"/>
+  <text x="24" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">€</text>
+</svg>

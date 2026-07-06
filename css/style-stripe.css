@@ -1,0 +1,291 @@
+/* ============================================================
+   DÉRATISATION.fr — Design System: STRIPE Inspired
+   Applique ce fichier APRÈS style.css pour override Stripe
+   ============================================================ */
+
+/* --- 1. PALETTE STRIPE --- */
+:root {
+  --stripe-purple: #533afd;
+  --stripe-purple-hover: #4434d4;
+  --stripe-purple-light: #b9b9f9;
+  --stripe-purple-deep: #2e2b8c;
+  --stripe-navy: #061b31;
+  --stripe-navy-dark: #1c1e54;
+  --stripe-body: #64748d;
+  --stripe-label: #273951;
+  --stripe-border: #e5edf5;
+  --stripe-white: #ffffff;
+  --stripe-shadow-blue: rgba(50,50,93,0.25);
+  --stripe-shadow-black: rgba(0,0,0,0.1);
+  --stripe-ambient: rgba(23,23,23,0.06);
+  --stripe-ruby: #ea2261;
+  --stripe-magenta: #f96bee;
+  --stripe-green: #15be53;
+  --stripe-source: Inter, 'SF Pro Display', system-ui, -apple-system, sans-serif;
+}
+
+body { font-family: var(--stripe-source); color: var(--stripe-navy); background: #fafafa; }
+
+/* --- 2. TYPOGRAPHY (weight 300, tight tracking) --- */
+h1, .hero-title {
+  font-size: 2.75rem !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.96px !important;
+  line-height: 1.1 !important;
+  color: var(--stripe-navy) !important;
+}
+
+h2, .section-title {
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.64px !important;
+  line-height: 1.1 !important;
+  color: var(--stripe-navy) !important;
+}
+
+h3, .solution-title, .card-title {
+  font-size: 1.38rem !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.22px !important;
+  color: var(--stripe-navy) !important;
+}
+
+p, .hero-subtitle, .card-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--stripe-body);
+}
+
+a { color: var(--stripe-purple); text-decoration: none; }
+a:hover { color: var(--stripe-purple-hover); }
+
+/* --- 3. SHADOWS (multi-layer, blue-tinted) --- */
+.card, .pricing-card, .solution-card, .service-card, .testimonial-card, .trust-card {
+  background: var(--stripe-white) !important;
+  border: 1px solid var(--stripe-border) !important;
+  border-radius: 4px !important;
+  box-shadow:
+    var(--stripe-shadow-blue) 0px 30px 45px -30px,
+    var(--stripe-shadow-black) 0px 18px 36px -18px !important;
+  transition: all 0.25s ease !important;
+}
+
+.card:hover, .pricing-card:hover, .solution-card:hover, .service-card:hover {
+  box-shadow:
+    var(--stripe-shadow-blue) 0px 40px 60px -30px,
+    var(--stripe-shadow-black) 0px 25px 50px -20px !important;
+  transform: translateY(-2px);
+}
+
+/* Featured / Popular card */
+.card.featured, .pricing-card.featured, .popular-card {
+  border: 1.5px solid var(--stripe-purple) !important;
+  box-shadow:
+    var(--stripe-shadow-blue) 0px 30px 45px -30px,
+    rgba(83,58,253,0.15) 0px 0px 0px 1px,
+    var(--stripe-shadow-black) 0px 18px 36px -18px !important;
+  position: relative;
+}
+
+/* --- 4. BUTTONS --- */
+.btn, .btn-primary, .cta-button, button[type="submit"] {
+  background: var(--stripe-purple) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 8px 20px !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em;
+  transition: background 0.2s ease, box-shadow 0.2s ease !important;
+  box-shadow: var(--stripe-shadow-blue) 0px 6px 12px -6px;
+}
+
+.btn:hover, .btn-primary:hover, .cta-button:hover, button[type="submit"]:hover {
+  background: var(--stripe-purple-hover) !important;
+  box-shadow: var(--stripe-shadow-blue) 0px 10px 20px -8px;
+}
+
+.btn-secondary, .btn-outline {
+  background: transparent !important;
+  color: var(--stripe-purple) !important;
+  border: 1px solid var(--stripe-purple-light) !important;
+  border-radius: 4px !important;
+  padding: 8px 20px !important;
+  font-weight: 400;
+  transition: background 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(83,58,253,0.05) !important;
+}
+
+/* Emergency highlight */
+.btn-urgent {
+  background: var(--stripe-ruby) !important;
+  color: white !important;
+}
+
+/* --- 5. BADGES --- */
+.badge, .stat-badge, .hero-badge {
+  background: white !important;
+  border: 1px solid var(--stripe-border) !important;
+  border-radius: 4px !important;
+  padding: 2px 10px !important;
+  font-size: 0.8rem;
+  color: var(--stripe-navy);
+}
+
+.badge-success, .success-badge {
+  background: rgba(21,190,83,0.15) !important;
+  color: #108c3d !important;
+  border: 1px solid rgba(21,190,83,0.3) !important;
+  border-radius: 4px !important;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+/* --- 6. NAVIGATION --- */
+nav, header {
+  background: rgba(255,255,255,0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--stripe-border) !important;
+}
+
+nav a, .nav-link {
+  color: var(--stripe-navy) !important;
+  font-size: 0.88rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em;
+}
+
+nav a:hover { color: var(--stripe-purple) !important; }
+
+/* --- 7. SECTIONS --- */
+.hero {
+  background: var(--stripe-white) !important;
+  position: relative;
+}
+
+/* Photo overlay stripes style */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(6,27,49,0.6) 0%,
+    rgba(28,30,84,0.4) 50%,
+    rgba(6,27,49,0.7) 100%
+  );
+  z-index: 1;
+}
+
+/* Stats bar with purple accent */
+.stats-section {
+  background: var(--stripe-navy-dark) !important;
+  color: white;
+}
+
+.stats-section .stat-number {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+/* Section alternation */
+.section-light { background: var(--stripe-white); }
+.section-alt { background: #fafafa; }
+
+/* Pricing popular badge */
+.popular-badge {
+  background: var(--stripe-purple) !important;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Price display */
+.price {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: var(--stripe-navy);
+}
+
+.price small {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--stripe-body);
+}
+
+/* --- 8. INPUTS & FORMS --- */
+input, select, textarea, .form-input {
+  border: 1px solid var(--stripe-border) !important;
+  border-radius: 4px !important;
+  padding: 10px 14px !important;
+  font-size: 0.9rem;
+  color: var(--stripe-navy);
+  background: white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus, .form-input:focus {
+  outline: none;
+  border-color: var(--stripe-purple) !important;
+  box-shadow: 0 0 0 1px var(--stripe-purple);
+}
+
+label, .form-label {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--stripe-label);
+  margin-bottom: 4px;
+}
+
+/* --- 9. FOOTER --- */
+footer, .footer {
+  background: var(--stripe-navy-dark) !important;
+  color: rgba(255,255,255,0.8);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+footer a { color: rgba(255,255,255,0.7); }
+footer a:hover { color: var(--stripe-purple-light); }
+
+/* --- 10. DECORATIVE ACCENTS --- */
+.accent-gradient {
+  background: linear-gradient(135deg, var(--stripe-ruby), var(--stripe-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dashed-divider {
+  border-top: 1px dashed var(--stripe-purple-light);
+}
+
+/* --- 11. ANIMATIONS --- */
+@keyframes stripeFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: stripeFadeIn 0.5s ease-out forwards;
+}
+
+.hero-title, .hero-subtitle, .hero-cta, .hero-badges {
+  animation: stripeFadeIn 0.6s ease-out both;
+}
+
+.hero-subtitle { animation-delay: 0.1s; }
+.hero-badges { animation-delay: 0.2s; }
+.hero-cta { animation-delay: 0.3s; }

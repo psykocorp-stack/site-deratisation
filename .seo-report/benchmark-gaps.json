@@ -1,0 +1,151 @@
+{
+  "benchmark": {
+    "generated": "2026-06-11",
+    "site": "Deratisation (pages: index, admin, comment-ca-marche, mention-legales, politique-confidentialite, services/details/*)",
+    "pages_analysed": 11
+  },
+  "gaps_by_factor": [
+    {
+      "factor": "Title tags (meta titles)",
+      "science": "Le title tag est le 2e signal on-page le plus important (Ahrefs + Backlinko). Doit contenir le mot-cle principal, etre <60 chars, unique par page.",
+      "current_site": "Pages sans title tag ou avec 'Document' comme titre implicite. Aucun title tag personnalise trouve sur les pages principales.",
+      "gap_severity": "CRITICAL",
+      "fix_needed": "Ajouter <title> unique sur chaque page avec mot-cle principal + localisation + marque"
+    },
+    {
+      "factor": "Meta descriptions",
+      "science": "Impact indirect sur le classement mais critique pour le CTR. Une bonne meta desc augmente le CTR de 5.8% (Ahrefs). 120-158 caracteres.",
+      "current_site": "Aucune meta description trouvee sur l'ensemble des pages. Les SERP montrent du texte aleatoire.",
+      "gap_severity": "CRITICAL",
+      "fix_needed": "Ajouter meta description sur chaque page avec call-to-action et mot-cle"
+    },
+    {
+      "factor": "H1 tags",
+      "science": "68% des pages classees ont le mot-cle exact dans H1 (Ahrefs). Une seule balise H1 par page recommandee.",
+      "current_site": "Pages correctes avec H1 unique, mais mot-cle principal manque dans certains H1 (ex: 'Nos Services' sans 'deratisation').",
+      "gap_severity": "HIGH",
+      "fix_needed": "Optimiser les H1 pour inclure le mot-cle principal + localisation (ex: Deratisation 92 - Nos Services Pro)"
+    },
+    {
+      "factor": "Mobile-friendly / Responsive",
+      "science": "Google indexe en mobile-first. 53% d'abandon si >3s de chargement. Core Web Vitals = facteur de ranking confirme.",
+      "current_site": "Le site semble responsive (media queries, viewport meta). Mais pas de test Core Web Vitals fait. Assets images non optimises (poids).",
+      "gap_severity": "MEDIUM",
+      "fix_needed": "Optimiser images (WebP), verifier LCP/FID/CLS avec Lighthouse, verifier responsive sur mobile reels"
+    },
+    {
+      "factor": "Page speed",
+      "science": "Chargement < 2.5s (LCP). Les pages qui passent Core Web Vitals ont 2x plus de chances d'etre #1.",
+      "current_site": "Anciennes photos Pexels de ~50KB chacune. Pas de lazy loading efficace. Pas de HTTP/2 verification. Fichiers CSS inline lourds.",
+      "gap_severity": "HIGH",
+      "fix_needed": "Convertir images en WebP avec compression, implementer lazy loading natif, minifier CSS/JS"
+    },
+    {
+      "factor": "Keyword optimization",
+      "science": "Les mots-cles doivent apparaitre dans: title, H1, URL, meta desc, 1er paragraphe, alt text. Mots-cles transactionnels convertissent 2-3x mieux.",
+      "current_site": "Mots-cles presents dans le contenu ('deratisation', 'nuisibles', '92', 'Colombes') mais pas structure. Alt text des photos ameliore recemment mais pas systematique.",
+      "gap_severity": "HIGH",
+      "fix_needed": "Audit des mots-cles cibles, les repartir strategiquement dans chaque page. Creer un cluster semantique."
+    },
+    {
+      "factor": "Content quality & depth",
+      "science": "Top 10 = 1442 mots en moyenne. Top 3 = 1882 mots. Score Flesch ~64.6. Le contenu long et complet ranke mieux.",
+      "current_site": "Les pages sont courtes. La page d'accueil fait ~600 mots. Pas de contenu approfondi sur les services (details des methodes, types de nuisibles, etc.).",
+      "gap_severity": "HIGH",
+      "fix_needed": "Reduire chaque section avec 300-500 mots supplementaires: details techniques, processus, types de nuisibles traites, temoignages"
+    },
+    {
+      "factor": "Local SEO (Google My Business)",
+      "science": "78% des recherches locales menent a un achat. Le Local Pack apparait dans 33% des recherches. 25+ avis = 2x plus de clics.",
+      "current_site": "Pas de schema LocalBusiness. Pas de lien Google Business Profile visible. Adresse et telephone presents en footer mais sans schema NAP.",
+      "gap_severity": "CRITICAL",
+      "fix_needed": "Ajouter schema.org LocalBusiness avec NAP, horaires, zone desservie. Creer/optimiser Google Business Profile"
+    },
+    {
+      "factor": "Schema structured data",
+      "science": "Schema.org markup donne 4x plus de chances d'obtenir un featured snippet (Ahrefs). Rich snippets = meilleur CTR.",
+      "current_site": "Aucun schema markup trouve sur les pages. Pas de LocalBusiness, Service, FAQ, Review, BreadcrumbList.",
+      "gap_severity": "CRITICAL",
+      "fix_needed": "Implementer schemas: LocalBusiness, Service (pour chaque type de deratisation), FAQ, Review, BreadcrumbList"
+    },
+    {
+      "factor": "Backlinks & authority",
+      "science": "66.31% des pages n'ont aucun backlink. 3+ domaines referents = 3x plus de trafic. DR correlation = 0.33.",
+      "current_site": "Aucun profil de backlinks connu. Site heberge sur GitHub Pages (sous-domaine psykocorp-stack.github.io). Pas de SEO authority.",
+      "gap_severity": "CRITICAL",
+      "fix_needed": "Migrer vers un domaine personnalise (deratisation-92.fr ou similaire). Campagne de netlinking annuaires professionnels + partenaires locaux"
+    },
+    {
+      "factor": "HTTPS & domain",
+      "science": "HTTPS est un signal de classement confirme. Google recommande les domaines en HTTPS.",
+      "current_site": "HTTPS fonctionnel via GitHub Pages. Mais domaine en .github.io reduit l'autorite. Pas de redirect personnalise.",
+      "gap_severity": "HIGH",
+      "fix_needed": "Acheter un nom de domaine court (.fr recommande). Configurer un CNAME vers GitHub Pages. Redirection 301 de l'ancien domaine."
+    },
+    {
+      "factor": "Open Graph / Social tags",
+      "science": "Les balises OG ameliorent le partage social. Pas un facteur de ranking direct mais augmente les signaux sociaux indirects.",
+      "current_site": "Aucune balise Open Graph (og:title, og:description, og:image) trouvee. Pas Twitter Card non plus.",
+      "gap_severity": "MEDIUM",
+      "fix_needed": "Ajouter og:title, og:description, og:image, og:url, og:type sur toutes les pages"
+    },
+    {
+      "factor": "Alt text on images",
+      "science": "Les alt text sont un facteur de ranking pour Google Images. Contribuent a l'accessibilite (ADA/WCAG). Doivent etre descriptifs.",
+      "current_site": "Alt text recemment ameliores mais certains restent generiques. Pas systematiquement optimises avec mots-cles cibles.",
+      "gap_severity": "MEDIUM",
+      "fix_needed": "Revoir tous les alt text avec format: '[action] [objet] [localisation] - [motivation]' (ex: Technicien deratisation Colombes traitement souris)"
+    },
+    {
+      "factor": "Internal linking structure",
+      "science": "Les pages avec un maillage interne fort rankent mieux (Ahrefs). Le PageRank circule via les liens internes.",
+      "current_site": "Navigation simple (4 liens). Pas de liens internes depuis le contenu vers les services. Pas de breadcrumb. Pas de page 'services' centrale.",
+      "gap_severity": "HIGH",
+      "fix_needed": "Ajouter breadcrumb, creer une page services index, lier les services entre eux depuis le contenu"
+    },
+    {
+      "factor": "Breadcrumb navigation",
+      "science": "Les breadcrumbs ameliorent l'UX et sont utilises par Google pour les rich snippets breadcrumb.",
+      "current_site": "Aucun breadcrumb sur aucune page.",
+      "gap_severity": "MEDIUM",
+      "fix_needed": "Ajouter breadcrumb + schema BreadcrumbList sur toutes les pages"
+    },
+    {
+      "factor": "Sitemap.xml & Robots.txt",
+      "science": "Essentiel pour le crawl et l'indexation. Google recommande sitemap.xml meme pour les petits sites.",
+      "current_site": "Pas de sitemap.xml. Pas de robots.txt. Les pages orphelines (facture-28-26.html) ne sont pas referencees.",
+      "gap_severity": "HIGH",
+      "fix_needed": "Generer sitemap.xml avec toutes les pages. Robots.txt avec directives de crawl."
+    },
+    {
+      "factor": "Analytics & tracking",
+      "science": "Mesurer le trafic et les conversions est indispensable pour optimiser le SEO.",
+      "current_site": "Pas de Google Analytics, pas de Google Search Console detecte. Aucune mesure du trafic en place.",
+      "gap_severity": "HIGH",
+      "fix_needed": "Installer Google Analytics 4 (GA4) + Google Search Console. Ajouter pixel de conversion."
+    },
+    {
+      "factor": "Canonical URLs",
+      "science": "Les balises canonical empechent le contenu duplique et concentrent le PageRank.",
+      "current_site": "Plusieurs versions de pages (index.html, index-stripe.html, index-energetic.html). Risque de contenu duplique.",
+      "gap_severity": "HIGH",
+      "fix_needed": "Ajouter <link rel='canonical'> sur toutes les pages. Decider quelle version de l'index est l'originale (ou supprimer les doublons)"
+    },
+    {
+      "factor": "Security headers",
+      "science": "Les Content Security Policy et autres headers de securite sont recommandes par Google.",
+      "current_site": "Aucun header de securite detecte. Le site ne semble pas avoir de CSP.",
+      "gap_severity": "LOW",
+      "fix_needed": "Ajouter Content-Security-Policy et X-Content-Type-Options headers via GitHub Pages"
+    }
+  ],
+  "score_overall": {
+    "critical_gaps": 5,
+    "high_gaps": 7,
+    "medium_gaps": 4,
+    "low_gaps": 1,
+    "total_gaps": 17,
+    "estimated_current_seo_readiness": "10/100 — le site n'est pas optimise pour le SEO"
+  },
+  "conclusion": "Le site a des fondations HTML correctes mais manque completement de SEO technique et on-page. Les 5 gaps CRITIQUES (title tags, meta desc, schema LocalBusiness, backlinks/domaine, structured data) doivent etre traites en priorite avant toute autre optimisation."
+}
