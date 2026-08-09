@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espace Chantier — Traitement des Nuisibles</title>
+  <style>
+    :root {
+      --primary: #0a1628;
+      --primary-light: #132244;
+      --accent: #f59e0b;
+      --accent-hover: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --gray-50: #f1f5f9;
+      --gray-100: #e2e8f0;
+      --gray-300: #94a3b8;
+      --gray-400: #64748b;
+      --radius-md: 12px;
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --font: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); background: var(--gray-50); color: #1e293b; min-height: 100vh; }
+    .topbar { background: var(--primary); color: #fff; padding: 18px 24px; display: flex; align-items: center; gap: 12px; }
+    .topbar h1 { font-size: 18px; font-weight: 700; }
+    .topbar .badge { background: rgba(255,255,255,0.14); padding: 3px 10px; border-radius: 20px; font-size: 11px; }
+    .wrap { max-width: 860px; margin: 24px auto; padding: 0 16px 80px; }
+    .card { background: #fff; border-radius: var(--radius-md); box-shadow: var(--shadow-md); padding: 22px; margin-bottom: 18px; }
+    .card h2 { font-size: 15px; margin-bottom: 14px; color: var(--primary); display: flex; align-items: center; gap: 8px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+    .info-item .lbl { font-size: 11px; color: var(--gray-400); text-transform: uppercase; letter-spacing: .03em; }
+    .info-item .val { font-size: 15px; font-weight: 600; margin-top: 2px; }
+    .pill { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+    .pill-urgence { background: var(--danger-bg); color: var(--danger); }
+    .pill-ok { background: var(--success-bg); color: var(--success); }
+    .upload-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .upload-box { border: 2px dashed var(--gray-100); border-radius: var(--radius-md); padding: 14px; text-align: center; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: .15s; background: var(--gray-50); }
+    .upload-box:hover, .upload-box.drag { border-color: var(--accent); background: #fffbeb; }
+    .upload-box .emoji { font-size: 30px; margin-bottom: 6px; }
+    .upload-box .etape-lbl { font-size: 13px; font-weight: 600; color: var(--primary); }
+    .upload-box .hint { font-size: 11px; color: var(--gray-400); margin-top: 3px; }
+    .upload-box img { max-width: 100%; max-height: 130px; border-radius: 8px; object-fit: cover; margin-bottom: 6px; }
+    .upload-box .status { font-size: 11px; margin-top: 8px; font-weight: 600; }
+    .upload-box .status.ok { color: var(--success); }
+    .upload-box .status.err { color: var(--danger); }
+    .upload-box .status.load { color: var(--accent-hover); }
+    input[type=file] { display: none; }
+    label.field { font-size: 12px; font-weight: 600; color: var(--primary); display: block; margin-bottom: 6px; }
+    textarea, .montant-input {
+      width: 100%; padding: 11px 14px; border: 1px solid var(--gray-100); border-radius: 8px;
+      font-family: var(--font); font-size: 14px; color: #1e293b; background: #fff; resize: vertical;
+    }
+    textarea:focus, .montant-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(245,158,11,.15); }
+    .montant-line { display: flex; align-items: center; gap: 10px; }
+    .montant-input { width: 160px; font-size: 18px; font-weight: 700; }
+    .montant-suffix { font-size: 16px; color: var(--gray-400); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 10px; padding: 13px 22px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: var(--font); transition: .15s; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-light); }
+    .btn-close { background: var(--danger); color: #fff; width: 100%; font-size: 16px; padding: 16px; }
+    .btn-close:hover { background: #b91c1c; }
+    .btn:disabled { opacity: .6; cursor: not-allowed; }
+    .note { font-size: 12px; color: var(--gray-400); margin-top: 10px; line-height: 1.5; }
+    .alert { padding: 13px 16px; border-radius: 10px; font-size: 13px; font-weight: 600; margin-bottom: 16px; }
+    .alert.err { background: var(--danger-bg); color: var(--danger); }
+    .alert.ok { background: var(--success-bg); color: var(--success); }
+    .photos-row { margin-top: 12px; }
+    .photos-row .ph { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--gray-400); padding: 4px 0; }
+    .spinner { display: inline-block; width: 12px; height: 12px; border: 2px solid var(--gray-100); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .hidden { display: none !important; }
+    .focus-block { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; text-align: center; }
+    .focus-block .big { font-size: 56px; margin-bottom: 12px; }
+    .focus-block h1 { font-size: 22px; color: var(--primary); margin-bottom: 8px; }
+    .focus-block p { color: var(--gray-400); max-width: 420px; line-height: 1.6; }
+    @media (max-width: 720px) {
+      .grid2 { grid-template-columns: 1fr; }
+      .upload-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Chargement / erreur -->
+  <div id="loadingScreen" class="focus-block">
+    <div class="big">🛠️</div>
+    <h1>Chargement du chantier…</h1>
+  </div>
+  <div id="errorScreen" class="focus-block hidden">
+    <div class="big">🚫</div>
+    <h1 id="errorTitle">Accès non autorisé</h1>
+    <p id="errorMsg">Lien invalide ou expiré. Vérifiez le lien reçu.</p>
+  </div>
+
+  <!-- Contenu chantier (masqué tant que non chargé) -->
+  <div id="chantierScreen" class="hidden">
+    <div class="topbar">
+      <span style="font-size:20px">🐀</span>
+      <h1>Espace Chantier <span class="badge" id="topId">#—</span></h1>
+    </div>
+
+    <div class="wrap">
+      <div id="topAlert" class="alert hidden"></div>
+
+      <!-- Infos client -->
+      <div class="card">
+        <h2>👤 Intervention</h2>
+        <div id="chantierInfo" class="grid2"></div>
+        <div style="margin-top:12px" id="chantierPills"></div>
+      </div>
+
+      <!-- Photos avant / pendant / après -->
+      <div class="card">
+        <h2>📸 Photos du chantier</h2>
+        <div class="upload-grid" id="uploadGrid"></div>
+        <div class="note">Les photos sont archivées sur NextCloud et envoyées par email à chaque dépôt. Le client ne voit pas cette page.</div>
+        <div class="photos-row" id="existingPhotos"></div>
+      </div>
+
+      <!-- Commentaires + tarif -->
+      <div class="card">
+        <h2>💬 Commentaires & Tarif</h2>
+        <label class="field">Commentaires d'intervention (état, produits utilisés, observations)</label>
+        <textarea id="commentaires" rows="4" placeholder="Ex : 2 passages effectués, traitement gel pulvérisé dans la cuisine…"></textarea>
+
+        <div style="margin-top:16px;margin-bottom:4px">
+          <label class="field">Montant facturé au client (€)</label>
+          <div class="montant-line">
+            <input type="number" id="montant" class="montant-input" min="0" step="1" placeholder="0">
+            <span class="montant-suffix">€ <span style="font-size:12px;color:var(--gray-300)">TTC</span></span>
+          </div>
+        </div>
+        <div class="note">⚠️ Une fois clôturé, le montant est <b>figé</b> et ne pourra plus être modifié.</div>
+        <div style="margin-top:8px">
+          <button class="btn btn-primary" onclick="saveDraft()">💾 Enregistrer le brouillon</button>
+        </div>
+        <div id="draftMsg" style="font-size:12px;color:var(--success);margin-top:8px"></div>
+      </div>
+
+      <!-- Clôture -->
+      <div class="card" style="border:2px solid var(--danger-bg)">
+        <h2 style="color:var(--danger)">🟥 Clôturer l'intervention</h2>
+        <p style="font-size:13px;color:var(--gray-400);line-height:1.6;margin-bottom:14px">
+          Clôturer déclenche l'envoi du récap complet (photos + infos) par email et bascule le paiement en <b>en attente</b>. Le lien de paiement sera ensuite envoyé au client.
+        </p>
+        <button class="btn btn-close" id="btnClose" onclick="cloturer()">🟥 Clôturer l'intervention</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // --- Lecture paramètres ---
+    const params = new URLSearchParams(location.search);
+    const LEAD_ID = params.get('id');
+    const TOKEN = params.get('token');
+    const ETAPES = [
+      { key: 'avant',   emoji: '🏚️', label: 'Avant' },
+      { key: 'pendant', emoji: '🔧', label: 'Pendant' },
+      { key: 'apres',   emoji: '✅', label: 'Après' },
+    ];
+
+    let chantier = null;
+    const filesBase64 = {}; // etape -> { data, filename }
+    const previews = {};    // etape -> dataURL local (aperçu technicien)
+
+    // --- Helpers ---
+    function showErr(title, msg) {
+      document.getElementById('loadingScreen').classList.add('hidden');
+      document.getElementById('errorScreen').classList.remove('hidden');
+      document.getElementById('errorTitle').textContent = title;
+      document.getElementById('errorMsg').textContent = msg || '';
+    }
+    function fmt(ph) {
+      return `<div class="info-item"><div class="lbl">${ph.l}</div><div class="val">${ph.v || '—'}</div></div>`;
+    }
+
+    // --- Chargement du chantier ---
+    async function loadChantier() {
+      if (!LEAD_ID || !TOKEN) return showErr('Accès non autorisé', 'Lien incomplet.');
+      try {
+        const r = await fetch(`/api/chantier?id=${LEAD_ID}&token=${TOKEN}`);
+        if (!r.ok) {
+          const d = await r.json().catch(()=>({}));
+          return showErr('Accès refusé', d.error || 'Impossible de charger le chantier.');
+        }
+        const d = await r.json();
+        chantier = d.chantier;
+        renderChantier();
+      } catch (e) {
+        showErr('Erreur réseau', 'Impossible de joindre le serveur.');
+      }
+    }
+
+    function renderChantier() {
+      document.getElementById('loadingScreen').classList.add('hidden');
+      document.getElementById('chantierScreen').classList.remove('hidden');
+      document.getElementById('topId').textContent = '#' + chantier.id;
+
+      const info = [
+        { l: 'Client', v: chantier.nom },
+        { l: 'Téléphone', v: chantier.telephone },
+        { l: 'Email', v: chantier.email },
+        { l: 'Nuisible', v: chantier.type_nuisible },
+        { l: 'Lieu', v: (chantier.type_lieu || '—') + ' · ' + (chantier.departement || '') },
+        { l: 'Message', v: chantier.message || '—' },
+      ];
+      document.getElementById('chantierInfo').innerHTML = info.map(fmt).join('');
+
+      // Statut pills
+      const pills = [];
+      if (chantier.urgence) pills.push('<span class="pill pill-urgence">🚨 URGENT</span>');
+      pills.push(`<span class="pill" style="background:var(--gray-50);color:var(--primary)">Statut : ${chantier.statut}</span>`);
+      pills.push(`<span class="pill ${chantier.statut_paiement === 'payé' ? 'pill-ok' : 'pill-ok'}">💳 Paiement : ${chantier.statut_paiement}</span>`);
+      document.getElementById('chantierPills').innerHTML = pills.join(' ');
+
+      // Montant + commentaires pré-remplis
+      if (chantier.montant) document.getElementById('montant').value = chantier.montant;
+      if (chantier.commentaires) document.getElementById('commentaires').value = chantier.commentaires;
+
+      // Upload grid
+      const grid = document.getElementById('uploadGrid');
+      grid.innerHTML = ETAPES.map((et, i) => {
+        const ok = chantier.photos.find(p => p.etape === et.key);
+        return `
+          <div class="upload-box" id="ubox-${et.key}" onclick="document.getElementById('file-${et.key}').click()">
+            <input type="file" id="file-${et.key}" accept="image/*" onchange="onFile('${et.key}', this)">
+            <div id="ubox-inner-${et.key}">
+              ${ok && previews[et.key] ? `<img src="${previews[et.key]}">` : ''}
+              <div class="emoji">${et.emoji}</div>
+              <div class="etape-lbl">${et.label}</div>
+              <div class="hint">${ok ? '✓ ' + (ok.filename || 'enregistrée') : 'Touchez pour ajouter'}</div>
+              <div class="status" id="ustat-${et.key}"></div>
+            </div>
+          </div>`;
+      }).join('');
+
+      // Photos existantes
+      if (chantier.photos.length) {
+        const list = document.getElementById('existingPhotos');
+        list.innerHTML = '<div style="font-size:12px;font-weight:600;color:var(--gray-400);margin-bottom:4px">Photos déjà envoyées :</div>' +
+          chantier.photos.map(p => `<div class="ph">${['avant','pendant','apres'].includes(p.etape)?({avant:'🏚️',pendant:'🔧',apres:'✅'})[p.etape]:(p.etape)} ${p.filename} — ${p.created_at || ''}</div>`).join('');
+      }
+    }
+
+    // --- Upload fichier : lit en base64 puis envoie ---
+    function onFile(etape, input) {
+      const file = input.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      const st = document.getElementById('ustat-' + etape);
+      reader.onload = async (e) => {
+        const full = e.target.result;         // data:image/jpeg;base64,....
+        const data = full.split(',')[1];      // base64 sans préfixe
+        previews[etape] = full;               // pour l'aperçu local
+        filesBase64[etape] = { data, filename: file.name };
+        // force re-render de la boîte pour insérer le <img> d'aperçu
+        if (chantier) { renderChantier(); }
+        if (st) { st.textContent = ''; st.className = 'status load'; }
+        await uploadPhoto(etape, data, file.name);
+      };
+      reader.readAsDataURL(file);
+    }
+
+    async function uploadPhoto(etape, base64, filename) {
+      const st = document.getElementById('ustat-' + etape);
+      try {
+        const r = await fetch(`/api/chantier?id=${LEAD_ID}&token=${TOKEN}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ etape, image_b64: base64, filename }),
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'Upload échoué');
+        if (st) { st.textContent = '✓ photo envoyée & archivée'; st.className = 'status ok'; }
+        showBanner('📸 Photo ' + etape + ' enregistrée et envoyée.','ok');
+        loadChantier(); // re-render (affiche la photo existante + liens)
+      } catch (err) {
+        if (st) { st.textContent = '✗ ' + (err.message || 'erreur'); st.className = 'status err'; }
+      }
+    }
+
+    // --- Sauvegarde brouillon (montant + commentaires) ---
+    async function saveDraft() {
+      const montant = document.getElementById('montant').value;
+      const commentaires = document.getElementById('commentaires').value;
+      try {
+        const r = await fetch(`/api/chantier?id=${LEAD_ID}&token=${TOKEN}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ montant, commentaires }),
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'Erreur');
+        document.getElementById('draftMsg').textContent = '✓ Brouillon enregistré (' + new Date().toLocaleTimeString() + ')';
+        showBanner('💾 Brouillon enregistré.','ok');
+      } catch (e) {
+        showBanner('✗ ' + e.message,'err');
+      }
+    }
+
+    // --- Clôture ---
+    async function cloturer() {
+      const btn = document.getElementById('btnClose');
+      if (!confirm('Clôturer l\'intervention ? Le tarif sera figé et le récap envoyé par email. Cette action est définitive.')) return;
+      btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Clôture en cours…';
+      try {
+        const montant = document.getElementById('montant').value;
+        const commentaires = document.getElementById('commentaires').value;
+        const r = await fetch(`/api/chantier?id=${LEAD_ID}&token=${TOKEN}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ montant, commentaires, cloturer: true }),
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'Erreur');
+        btn.textContent = '✅ Intervention clôturée';
+        btn.style.background = 'var(--success)';
+        showBanner('✅ Chantier clôturé ! Récap envoyé par email. Paiement en attente.','ok');
+        loadChantier();
+      } catch (e) {
+        btn.disabled = false; btn.innerHTML = '🟥 Clôturer l\'intervention';
+        showBanner('✗ ' + e.message,'err');
+      }
+    }
+
+    function showBanner(msg, type) {
+      const b = document.getElementById('topAlert');
+      b.className = 'alert ' + type;
+      b.textContent = msg;
+      b.classList.remove('hidden');
+      setTimeout(()=> b.classList.add('hidden'), 5000);
+    }
+
+    // Drag & drop
+    ETAPES.forEach(et => {
+      const box = () => document.getElementById('ubox-' + et.key);
+      document.addEventListener('dragover', e => e.preventDefault());
+      document.addEventListener('drop', e => {
+        e.preventDefault();
+        const t = e.target.closest('.upload-box');
+        if (!t) return;
+        t.classList.remove('drag');
+        const file = e.dataTransfer.files[0];
+        if (file) {
+          const st = document.getElementById('ustat-' + t.id.replace('ubox-',''));
+          const reader = new FileReader();
+          reader.onload = ev => {
+            const data = ev.target.result.split(',')[1];
+            uploadPhoto(t.id.replace('ubox-',''), data, file.name);
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+      const bind = () => box() && box().addEventListener('dragover', () => box().classList.add('drag'));
+      const unbind = () => box() && box().addEventListener('dragleave', () => box().classList.remove('drag'));
+      document.addEventListener('mouseover', bind);
+      document.addEventListener('mouseout', unbind);
+    });
+
+    // --- Init ---
+    loadChantier();
+  </script>
+</body>
+</html>

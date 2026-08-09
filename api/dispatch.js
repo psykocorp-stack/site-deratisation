@@ -1,7 +1,7 @@
 // api/dispatch.js — Partenaire accepte/refuse un lead
 // Appelé depuis les liens Telegram : /api/dispatch?token=...
 const { createClient } = require('@libsql/client');
-const { verifierLien, envoyerTelegram, notifierAdmin } = require('./auto-dispatch');
+const { verifierLien, envoyerTelegram, notifierAdmin, genererLienChantier } = require('./auto-dispatch');
 
 const TURSO_URL = process.env.TURSO_DATABASE_URL;
 const TURSO_TOKEN = process.env.TURSO_AUTH_TOKEN;
@@ -75,6 +75,20 @@ module.exports = async function handler(req, res) {
 
       if (partenaire && partenaire.telegram_id) {
         await envoyerTelegram(partenaire.telegram_id, message);
+        // Lien vers l'espace chantier (photos, commentaires, tarif, clôture)
+        const chantierLien = genererLienChantier(leadId);
+        const chantierMsg = [
+          `🛠️ *Espace chantier #${leadId}*`,
+          ``,
+          `Accède au chantier pour :`,
+          `   • 📸 photos avant/pendant/après`,
+          `   • 💬 commentaires`,
+          `   • 💰 tarif`,
+          `   • 🟥 clôturer l'intervention`,
+          ``,
+          `🔗 ${chantierLien}`,
+        ].join('\n');
+        await envoyerTelegram(partenaire.telegram_id, chantierMsg);
       }
 
       // Notifier admin

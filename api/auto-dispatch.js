@@ -80,6 +80,13 @@ function genererLienAcceptRefuser(leadId, partenaireId, action) {
   return `${baseUrl}/api/dispatch?token=${encodeURIComponent(token)}`;
 }
 
+// Lien espace chantier — envoyé au partenaire dès qu'il accepte
+function genererLienChantier(leadId) {
+  const token = crypto.createHmac('sha256', HMAC_SECRET).update('chantier:' + String(leadId)).digest('hex').substring(0, 24);
+  const baseUrl = process.env.BASE_URL || 'https://traitement-des-nuisibles.fr';
+  return `${baseUrl}/chantier.html?id=${leadId}&token=${token}`;
+}
+
 function verifierLien(token) {
   const parts = token.split(':');
   if (parts.length < 4) return { valide: false, erreur: 'token_invalide' };
@@ -198,6 +205,7 @@ async function notifierAdmin(lead, texte) {
 module.exports = {
   matchingAuto,
   genererLienAcceptRefuser,
+  genererLienChantier,
   verifierLien,
   dispatcherLead,
   anonymiserLead,

@@ -69,6 +69,36 @@ module.exports = async function handler(req, res) {
     )`);
     results.push('TABLE leads_dispatch OK');
 
+    // Colonnes chantier/paiement ajoutées à leads si absentes
+    for (const [col, type, defaultVal] of [
+      ['montant','REAL','0'],
+      ['statut_paiement','TEXT',"'en_attente'"],
+      ['lien_paiement','TEXT',"''"],
+      ['commentaires','TEXT',"''"],
+      ['notes','TEXT',"''"],
+      ['cloture_le','DATETIME','NULL']
+    ]) {
+      try {
+        await client.execute(`ALTER TABLE leads ADD COLUMN ${col} ${type} DEFAULT ${defaultVal}`);
+        results.push(`COLUMN ${col} added to leads`);
+      } catch (e) {
+        if (!e.message.includes('duplicate column')) results.push(`COLUMN ${col}: ${e.message}`);
+        else results.push(`COLUMN ${col} already exists`);
+      }
+    }
+
+    // Table chantier_photos (av/pendant/apres)
+    await client.execute(`CREATE TABLE IF NOT EXISTS chantier_photos (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      lead_id INTEGER NOT NULL,
+      etape TEXT NOT NULL,
+      filename TEXT,
+      lien_nextcloud TEXT,
+      commentaire TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )`);
+    results.push('TABLE chantier_photos OK');
+
     // Ajout colonne partenaire_id à leads si pas présente
     try {
       await client.execute(`ALTER TABLE leads ADD COLUMN partenaire_id INTEGER`);
