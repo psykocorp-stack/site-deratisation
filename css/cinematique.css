@@ -1,0 +1,96 @@
+/* ============================================
+   DERATISATION — Cinematique.css
+   Couche motion par-dessus style.css (compatible formulaire)
+   Palette : bleu marine #0a1628 + ambre #f59e0b
+   ============================================ */
+
+/* --- Lenis scroll (conteneur) --- */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* --- Hero : titre split-letters --- */
+.hero h1 { overflow: hidden; }
+.hero h1 .hl { display: inline-block; will-change: transform; transform: translateY(110%); }
+.hero h1.anim-running .hl { transform: translateY(110%); }
+.hero h1 .highlight .hl { color: var(--accent); }
+
+/* --- Hero overlay cinématique (dégradé gauche->droite) --- */
+.hero-cine-overlay {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(100deg,
+    rgba(10,22,40,0.92) 0%,
+    rgba(10,22,40,0.75) 35%,
+    rgba(10,22,40,0.35) 65%,
+    rgba(10,22,40,0.08) 100%);
+}
+.hero .container { position: relative; z-index: 2; }
+
+/* --- Bandeau marquee défilant infini --- */
+.marquee-section { background: var(--primary); overflow: hidden; padding: 14px 0; border-top: 1px solid rgba(245,158,11,0.15); border-bottom: 1px solid rgba(245,158,11,0.15); }
+.marquee-track { display: flex; gap: 3rem; width: max-content; will-change: transform; }
+.marquee-item { display: flex; align-items: center; gap: 0.6rem; color: var(--gray-200); font-weight: 600; font-size: 1.05rem; letter-spacing: 0.04em; white-space: nowrap; }
+.marquee-item .dot { color: var(--accent); font-size: 1.2rem; line-height: 1; }
+
+/* --- Reveal générique --- */
+[data-reveal] { opacity: 0; }
+
+/* --- Parallax layers --- */
+[data-parallax] { will-change: transform; }
+
+/* --- Batch cards --- */
+[data-batch] { opacity: 0; }
+
+/* --- Hover premium sur cards services / solutions --- */
+.solution-card, .price-card, .trust-card, .testimonial-card, .blog-card {
+  transition: transform .35s cubic-bezier(.22,.61,.36,1), box-shadow .35s cubic-bezier(.22,.61,.36,1), border-color .35s;
+  will-change: transform;
+}
+.solution-card:hover, .price-card:hover, .trust-card:hover, .testimonial-card:hover, .blog-card:hover {
+  transform: translateY(-6px);
+}
+
+/* --- Solution-card image zoom (effet ciné) --- */
+.solution-card-image { overflow: hidden; position: relative; }
+.solution-card-image::after {
+  content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,22,40,0) 40%, rgba(10,22,40,0.55) 100%); pointer-events: none;
+}
+.solution-card:hover .solution-card-image {
+  transform: scale(1.03);
+}
+
+/* --- Accent glitch color sur titre section (subtile) --- */
+.section-header .overline { letter-spacing: 0.22em; font-weight: 700; }
+
+/* --- Progression scroll bar (top fluo) --- */
+.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; z-index: 9999; width: 100%; transform-origin: 0 50%; background: linear-gradient(90deg, var(--accent), #fbbf24, var(--accent)); }
+
+/* --- Galerie horizontale (bandeaux métier) --- */
+.horiz-wrap { position: relative; }
+.horiz-track { display: flex; gap: 1.5rem; width: max-content; }
+.horiz-track .photo-wrap { flex: 0 0 auto; }
+
+/* --- Effet vignette cinéma sur images bandeaux --- */
+.photo-wrap img { border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); }
+
+/* --- CTA section fond dynamique --- */
+.cta-section { position: relative; overflow: hidden; }
+.cta-section::before {
+  content: ""; position: absolute; inset: -40% 0 auto 0; height: 140%;
+  background: radial-gradient(ellipse at center, rgba(245,158,11,0.18), transparent 70%);
+  pointer-events: none;
+}
+
+/* --- Respect du reduced-motion --- */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal], [data-batch] { opacity: 1 !important; transform: none !important; }
+  .marquee-track { animation: none; }
+  .scroll-progress { display: none; }
+}
+
+/* --- Responsive : stack la galerie horizontale sur mobile --- */
+@media (max-width: 768px) {
+  .horiz-track { flex-direction: column; width: 100%; }
+  .horiz-track .photo-wrap { width: 100%; }
+}
