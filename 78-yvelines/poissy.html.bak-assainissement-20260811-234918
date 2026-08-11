@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dératisation Versailles (78) - Expert anti-nuisibles sur Versailles et ses quartiers</title>
-  <meta name="description" content="Intervention rapide anti-nuisibles à Versailles 78. Spécialiste Certibiocide - rats, punaises de lit, cafards, guêpes, fourmis. Devis gratuit sous 24h">
-  <meta name="keywords" content="dératisation Versailles, désinsectisation Versailles, anti-nuisibles 78, punaises de lit Versailles, traitement rats Versailles, cafards Versailles, fourmis Versailles, guêpes Versailles, frelons Versailles, Certibiocide Yvelines">
-  <link rel="canonical" href="https://traitement-des-nuisibles.fr/78-yvelines/versailles.html">
-  <meta property="og:title" content="Dératisation Versailles (78) - Expert anti-nuisibles sur Versailles et ses quartiers">
-  <meta property="og:description" content="Intervention rapide anti-nuisibles à Versailles 78. Spécialiste Certibiocide - rats, punaises de lit, cafards, guêpes, fourmis. Devis gratuit sous 24h">
+  <title>Dératisation Poissy (78) - Expert anti-nuisibles sur Poissy et ses quartiers</title>
+  <meta name="description" content="Intervention rapide anti-nuisibles à Poissy 78. Spécialiste Certibiocide - rats, punaises de lit, cafards, guêpes, fourmis. Devis gratuit sous 24h">
+  <meta name="keywords" content="dératisation Poissy, désinsectisation Poissy, anti-nuisibles 78, punaises de lit Poissy, traitement rats Poissy, cafards Poissy, fourmis Poissy, guêpes Poissy, frelons Poissy, Certibiocide Yvelines">
+  <link rel="canonical" href="https://traitement-des-nuisibles.fr/78-yvelines/poissy.html">
+  <meta property="og:title" content="Dératisation Poissy (78) - Expert anti-nuisibles sur Poissy et ses quartiers">
+  <meta property="og:description" content="Intervention rapide anti-nuisibles à Poissy 78. Spécialiste Certibiocide - rats, punaises de lit, cafards, guêpes, fourmis. Devis gratuit sous 24h">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://traitement-des-nuisibles.fr/78-yvelines/versailles.html">
+  <meta property="og:url" content="https://traitement-des-nuisibles.fr/78-yvelines/poissy.html">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Dératisation IDF Pro">
   <meta property="og:image" content="https://traitement-des-nuisibles.fr/images/logo-v1.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dératisation Versailles (78) - Expert anti-nuisibles">
-  <meta name="twitter:description" content="Intervention rapide anti-nuisibles à Versailles. Spécialiste Certibiocide. Devis gratuit sous 24h">
+  <meta name="twitter:title" content="Dératisation Poissy (78) - Expert anti-nuisibles">
+  <meta name="twitter:description" content="Intervention rapide anti-nuisibles à Poissy. Spécialiste Certibiocide. Devis gratuit sous 24h">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/svg+xml" href="/images/icon-shield.svg">
@@ -25,40 +25,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="dateModified" content="2026-06-12">
-  <!-- Schema.org LocalBusiness + PestControl Versailles -->
+  <!-- Schema.org LocalBusiness + PestControl Poissy -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "PestControl"],
-    "name": "Dératisation IDF Pro - Versailles",
-    "description": "Expert anti-nuisibles certifié Certibiocide à Versailles et dans les Yvelines (78). Dératisation, désinsectisation, traitement punaises de lit, guêpes et frelons. Intervention 7j/7.",
-    "url": "https://traitement-des-nuisibles.fr/78-yvelines/versailles.html",
+    "name": "Dératisation IDF Pro - Poissy",
+    "description": "Expert anti-nuisibles certifié Certibiocide à Poissy et dans les Yvelines (78). Dératisation, désinsectisation, traitement punaises de lit, guêpes et frelons. Intervention 7j/7.",
+    "url": "https://traitement-des-nuisibles.fr/78-yvelines/poissy.html",
     "telephone": "+33612515432",
     "email": "contact@traitement-des-nuisibles.fr",
     "image": "https://traitement-des-nuisibles.fr/images/logo-v1.jpg",
     "priceRange": "135€ - 495€",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "10 Rue des Réservoirs",
-      "addressLocality": "Versailles",
+      "streetAddress": "8 Place de la République",
+      "addressLocality": "Poissy",
       "addressRegion": "Île-de-France",
-      "postalCode": "78000",
+      "postalCode": "78300",
       "addressCountry": "FR"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "48.8049",
-      "longitude": "2.1204"
+      "latitude": "48.9286",
+      "longitude": "2.0456"
     },
     "areaServed": [
-      { "@type": "City", "name": "Versailles" },
-      { "@type": "City", "name": "Le Chesnay-Rocquencourt" },
-      { "@type": "City", "name": "Viroflay" },
-      { "@type": "City", "name": "Marly-le-Roi" },
-      { "@type": "City", "name": "Saint-Cyr-l'École" },
-      { "@type": "City", "name": "Buc" },
-      { "@type": "City", "name": "Jouy-en-Josas" },
-      { "@type": "City", "name": "Guyancourt" }
+      { "@type": "City", "name": "Poissy" },
+      { "@type": "City", "name": "Carrières-sous-Poissy" },
+      { "@type": "City", "name": "Orgeval" },
+      { "@type": "City", "name": "Villennes-sur-Seine" },
+      { "@type": "City", "name": "Les Mureaux" },
+      { "@type": "City", "name": "Verneuil-sur-Seine" },
+      { "@type": "City", "name": "Médan" }
     ],
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "07:00", "closes": "22:00" }
@@ -70,19 +69,19 @@
       "bestRating": "5"
     },
     "sameAs": [
-      "https://traitement-des-nuisibles.fr/78-yvelines/versailles.html"
+      "https://traitement-des-nuisibles.fr/78-yvelines/poissy.html"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Services anti-nuisibles Versailles",
+      "name": "Services anti-nuisibles Poissy",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Dératisation rats Versailles",
-            "description": "Forfait rats comprenant diagnostic, pose d'appâts rodenticides professionnels, rebouchage des accès et second passage de suivi à Versailles.",
-            "areaServed": { "@type": "City", "name": "Versailles" }
+            "name": "Dératisation rats Poissy",
+            "description": "Forfait rats comprenant diagnostic, pose d'appâts rodenticides professionnels, rebouchage des accès et second passage de suivi à Poissy.",
+            "areaServed": { "@type": "City", "name": "Poissy" }
           },
           "price": "165.00",
           "priceCurrency": "EUR"
@@ -91,9 +90,9 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Désourisation souris Versailles",
+            "name": "Désourisation souris Poissy",
             "description": "Forfait souris comprenant diagnostic, pose d'appâts rodenticides, rebouchage des accès et second passage de suivi.",
-            "areaServed": { "@type": "City", "name": "Versailles" }
+            "areaServed": { "@type": "City", "name": "Poissy" }
           },
           "price": "135.00",
           "priceCurrency": "EUR"
@@ -102,9 +101,9 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Désinsectisation cafards Versailles",
+            "name": "Désinsectisation cafards Poissy",
             "description": "Forfait cafards comprenant diagnostic, application de gel insecticide professionnel, pulvérisation ciblée et second passage.",
-            "areaServed": { "@type": "City", "name": "Versailles" }
+            "areaServed": { "@type": "City", "name": "Poissy" }
           },
           "price": "165.00",
           "priceCurrency": "EUR"
@@ -113,9 +112,9 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Traitement fourmis Versailles",
+            "name": "Traitement fourmis Poissy",
             "description": "Forfait fourmis comprenant diagnostic et traitement des colonies et chemins de fourmis.",
-            "areaServed": { "@type": "City", "name": "Versailles" }
+            "areaServed": { "@type": "City", "name": "Poissy" }
           },
           "price": "135.00",
           "priceCurrency": "EUR"
@@ -124,9 +123,9 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Traitement punaises de lit Versailles",
-            "description": "Traitement par vapeur sèche et chimique des punaises de lit dans les logements anciens de Versailles.",
-            "areaServed": { "@type": "City", "name": "Versailles" }
+            "name": "Traitement punaises de lit Poissy",
+            "description": "Traitement par vapeur sèche et chimique des punaises de lit dans les logements à Poissy.",
+            "areaServed": { "@type": "City", "name": "Poissy" }
           },
           "price": "295.00",
           "priceCurrency": "EUR"
@@ -135,9 +134,9 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Destruction nids de guêpes et frelons Versailles",
-            "description": "Destruction de nids toutes hauteurs, intervention rapide 7j/7 à Versailles et ses quartiers.",
-            "areaServed": { "@type": "City", "name": "Versailles" }
+            "name": "Destruction nids de guêpes et frelons Poissy",
+            "description": "Destruction de nids toutes hauteurs, intervention rapide 7j/7 à Poissy et ses quartiers.",
+            "areaServed": { "@type": "City", "name": "Poissy" }
           },
           "price": "0",
           "priceCurrency": "EUR"
@@ -153,42 +152,42 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Y a-t-il beaucoup de rats à Versailles ?",
+        "name": "Y a-t-il beaucoup de rats à Poissy à cause de la Seine ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Oui, Versailles est confrontée à une présence significative de rats, notamment le long des réseaux d'égouts anciens du centre-ville et dans les zones de restauration près du Château. Les quartiers Notre-Dame et Saint-Louis sont particulièrement concernés en raison de leurs immeubles anciens et de leurs caves communicantes. Notre intervention de dératisation (165€) comprend diagnostic, appâts rodenticides professionnels et rebouchage des accès."
+          "text": "Oui, la proximité de la Seine est un facteur majeur de la présence de rats à Poissy. Les berges du fleuve offrent un habitat idéal pour les rongeurs, qui remontent facilement vers les habitations des quartiers de Beauregard et du Centre-Ville via les réseaux d'eaux pluviales et d'égouts. Les zones pavillonnaires de La Coudraie et des Merisiers sont moins touchées, mais les immeubles du centre connaissent des infiltrations régulières. Notre forfait dératisation (165€) comprend diagnostic complet, pose d'appâts rodenticides professionnels Rubis Pasta, rebouchage des accès et second passage de suivi à 10-15 jours."
         }
       },
       {
         "@type": "Question",
-        "name": "Les punaises de lit sont-elles fréquentes dans le centre historique de Versailles ?",
+        "name": "Y a-t-il beaucoup de guêpes dans les parcs de Poissy ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Les punaises de lit sont malheureusement courantes dans les logements anciens du centre historique de Versailles (quartiers Notre-Dame, Saint-Louis, Chantiers). La vétusté de certains bâtiments, les caves partagées et la forte rotation locative favorisent leur propagation. Nos traitements commencent à 295€ pour un studio avec vapeur sèche à 120°C et application de biocides homologués, avec un taux de succès supérieur à 95%."
+          "text": "Oui, Poissy possède de nombreux espaces verts comme le Parc Meissonier et le Parc du Prieuré, ce qui attire les guêpes et les frelons, surtout en été. Les quartiers résidentiels comme Beauregard, La Bruyère et Les Merisiers, avec leurs jardins et leurs arbres, sont particulièrement exposés. Notre équipe intervient sous 2h avec du matériel spécialisé (perches télescopiques jusqu'à 12 mètres) pour détruire les nids en toute sécurité."
         }
       },
       {
         "@type": "Question",
-        "name": "Intervenez-vous au Château de Versailles et ses dépendances ?",
+        "name": "Prix pour punaises de lit dans un appartement à Poissy ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Oui, nous intervenons dans tous les établissements liés au domaine du Château de Versailles : hôtels, restaurants, musées et bâtiments administratifs du quartier du Château. Nos techniciens sont habilités à travailler dans les zones classées et respectent le protocole strict du site. Nous proposons des contrats HACCP pour les professionnels de la restauration autour du Château."
+          "text": "Pour un appartement dans le Centre-Ville de Poissy, nos tarifs punaises de lit sont les suivants : studio 295€ TTC, 2 pièces 395€ TTC, 3 pièces 495€ TTC, 4 pièces et plus sur devis. Le traitement combine vapeur sèche à 120°C (létale pour les punaises et leurs œufs), application ciblée de biocides homologués et lavage du linge à haute température. Le quartier Centre-Ville, avec ses immeubles anciens et ses caves partagées, est l'un des plus touchés par les punaises de lit à Poissy."
         }
       },
       {
         "@type": "Question",
-        "name": "Quels quartiers de Versailles sont les plus touchés par les nuisibles ?",
+        "name": "Intervention rapide dans les quartiers résidentiels de Poissy ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Le quartier Notre-Dame (centre historique) est le plus touché par les punaises de lit et les rats à cause des immeubles anciens. Le quartier Saint-Louis connaît des problèmes de cafards dans les restaurants. Porchefontaine et Satory sont davantage confrontés aux fourmis et aux guêpes en raison de leurs zones pavillonnaires. Montreuil et Clagny-Glatigny voient des infestations de souris dans les copropriétés. Nous intervenons dans les 8 quartiers de Versailles avec le même professionnalisme."
+          "text": "Absolument. Nous intervenons sous 2h maximum dans tous les quartiers résidentiels de Poissy : La Coudraie, Le Grand Poissy, La Bruyère, Les Merisiers et La Maltournée. Ces secteurs sont particulièrement confrontés aux fourmis (135€) et aux guêpes/frelons en été. Les jardins et les arbres attirent les frelons asiatiques, qui construisent leurs nids en hauteur. Notre équipe est équipée de perches télescopiques jusqu'à 12 mètres pour détruire les nids en toute sécurité, même en hauteur."
         }
       },
       {
         "@type": "Question",
-        "name": "Proposez-vous des contrats spécifiques pour les restaurants près du Château ?",
+        "name": "Votre entreprise est-elle Certibiocide ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolument. Nous proposons des contrats de sanitation HACCP pour les restaurants, hôtels et cafés autour du Château de Versailles et dans tout le quartier Saint-Louis. Ces contrats incluent un diagnostic initial complet, des passages préventifs réguliers, un plan de lutte personnalisé et la tenue d'un registre de traitement conforme à la réglementation. Devis gratuit et sur-mesure selon la surface et l'activité."
+          "text": "Oui, notre entreprise est certifiée Certibiocide, conformément à la réglementation française. Tous nos techniciens sont titulaires du certificat individuel biocide (catégorie 3 : nuisibles et 18 : désinfection). Nous utilisons uniquement des produits biocides homologués par l'ANSES et respectons strictement les doses autorisées. Notre certification est vérifiable sur demande. Cela garantit à nos clients de Poissy une prestation professionnelle, efficace et respectueuse de l'environnement."
         }
       }
     ]
@@ -209,7 +208,7 @@
         <a href="/#tarifs">Tarifs</a>
         <a href="/#zones">Zones</a>
         <a href="#devis">Devis gratuit</a>
-        <a href="/#devis">Contact</a>
+        <a href="/contact.html">Contact</a>
         <a href="/comment-ca-marche.html">Comment ça marche</a>
         <a href="tel:+33612515432" class="btn btn-primary btn-sm"><img src="/images/icon-phone.svg" alt="" class="icn"> 06 12 51 54 32</a>
       </nav>
@@ -217,15 +216,15 @@
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="hero" role="region" aria-label="Dératisation Versailles">
+  <section class="hero" role="region" aria-label="Dératisation Poissy">
     <div class="hero-bg-photo" aria-hidden="true"></div>
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-dots" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <h1>Dératisation <span class="highlight">Versailles 78</span> — Intervention rapide 7j/7</h1>
-          <p>Expert anti-nuisibles certifié Certibiocide à Versailles et dans les Yvelines. Intervention 7j/7 dans tous les quartiers : Notre-Dame, Saint-Louis, Montreuil, Clagny-Glatigny, Porchefontaine, Chantiers, Bernard de Jussieu, Satory. Traitement rats (165€), souris (135€), cafards (165€), punaises de lit (dès 295€), fourmis (135€), guêpes et frelons — devis gratuit sous 24h.</p>
+          <h1>Dératisation <span class="highlight">Poissy 78</span> — Intervention rapide 7j/7</h1>
+          <p>Expert anti-nuisibles certifié Certibiocide à Poissy et dans les Yvelines. Intervention 7j/7 dans tous les quartiers : Centre-Ville, La Coudraie, Beauregard, Le Grand Poissy, La Bruyère, Les Merisiers, La Maltournée. Traitement rats (165€), souris (135€), cafards (165€), punaises de lit (dès 295€), fourmis (135€), guêpes et frelons — devis gratuit sous 24h.</p>
           <div class="hero-badges">
             <span class="hero-badge"><span class="icon">✓</span> Intervention 7j/7</span>
             <span class="hero-badge"><span class="icon">✓</span> Devis gratuit</span>
@@ -281,8 +280,8 @@
         <div class="stat-label">Clients satisfaits</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-count="8" data-suffix=" quartiers" data-duration="1500">8 quartiers</div>
-        <div class="stat-label">Quartiers couverts à Versailles</div>
+        <div class="stat-number" data-count="7" data-suffix=" quartiers" data-duration="1500">7 quartiers</div>
+        <div class="stat-label">Quartiers couverts à Poissy</div>
       </div>
       <div class="stat-item">
         <div class="stat-number" data-count="2" data-suffix="h" data-duration="1000">2h</div>
@@ -291,12 +290,12 @@
     </div>
   </section>
 
-  <!-- ===== NOS SERVICES À VERSAILLES ===== -->
+  <!-- ===== NOS SERVICES À POISSY ===== -->
   <section id="services" class="container" style="padding-top: 80px; padding-bottom: 80px;">
     <div class="section-header">
-      <span class="overline">Nos services à Versailles</span>
-      <h2>Solutions anti-nuisibles adaptées à Versailles</h2>
-      <p class="section-subtitle">Des méthodes certifiées pour chaque type de nuisible, dans tous les quartiers de Versailles</p>
+      <span class="overline">Nos services à Poissy</span>
+      <h2>Solutions anti-nuisibles adaptées à Poissy</h2>
+      <p class="section-subtitle">Des méthodes certifiées pour chaque type de nuisible, dans tous les quartiers de Poissy</p>
     </div>
     <div class="solutions-grid">
       <div class="solution-card">
@@ -305,8 +304,8 @@
         </div>
         <div class="solution-card-body">
           <h3>Dératisation rats</h3>
-          <p>Diagnostic approfondi des caves et égouts, pose d'appâts rodenticides professionnels (Rubis Pasta), rebouchage des accès et second passage de suivi à 10–15 jours. Particulièrement efficace dans les quartiers anciens de Versailles.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <p>Diagnostic approfondi des caves et égouts, pose d'appâts rodenticides professionnels (Rubis Pasta), rebouchage des accès et second passage de suivi à 10–15 jours. Particulièrement efficace dans les quartiers proches de la Seine (Centre-Ville, Beauregard) où les rats sont très présents.</p>
+          <a href="/deratisation.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
       <div class="solution-card">
@@ -315,8 +314,8 @@
         </div>
         <div class="solution-card-body">
           <h3>Désourisation souris</h3>
-          <p>Diagnostic, pose d'appâts rodenticides (Racumin), rebouchage des accès et second passage de suivi. Idéal pour les copropriétés des quartiers Montreuil et Clagny-Glatigny.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <p>Diagnostic, pose d'appâts rodenticides (Racumin), rebouchage des accès et second passage de suivi. Idéal pour les copropriétés et les quartiers résidentiels du Grand Poissy et de La Bruyère.</p>
+          <a href="/deratisation.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
       <div class="solution-card">
@@ -325,8 +324,8 @@
         </div>
         <div class="solution-card-body">
           <h3>Punaises de lit</h3>
-          <p>Traitement par vapeur sèche (120°C) et application ciblée de biocides homologués. Forfait par pièce : studio 295€, 2 pièces 395€, 3 pièces 495€. Solution spécialement adaptée aux logements anciens du centre historique.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <p>Traitement par vapeur sèche (120°C) et application ciblée de biocides homologués. Forfait par pièce : studio 295€, 2 pièces 395€, 3 pièces 495€. Solution spécialement adaptée aux immeubles anciens du Centre-Ville et aux locations en centre ancien.</p>
+          <a href="/punaises-de-lit.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
       <div class="solution-card">
@@ -335,8 +334,8 @@
         </div>
         <div class="solution-card-body">
           <h3>Cafards &amp; blattes</h3>
-          <p>Gel insecticide professionnel (Advion) et pulvérisation ciblée. Second passage de contrôle à 10–15 jours. Protection durable pour les restaurants et commerces du quartier Saint-Louis et du Château.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <p>Gel insecticide professionnel (Advion) et pulvérisation ciblée. Second passage de contrôle à 10–15 jours. Protection durable pour les restaurants du Centre-Ville et les commerces de La Maltournée (zone commerciale).</p>
+          <a href="/cafards-blattes.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
       <div class="solution-card">
@@ -345,8 +344,8 @@
         </div>
         <div class="solution-card-body">
           <h3>Fourmis</h3>
-          <p>Traitement des colonies et chemins de fourmis par appâts et pulvérisation ciblée. Solution idéale pour les zones pavillonnaires de Porchefontaine et Satory. Résultat durable garanti.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <p>Traitement des colonies et chemins de fourmis par appâts et pulvérisation ciblée. Solution idéale pour les zones pavillonnaires de La Coudraie et des Merisiers. Résultat durable garanti.</p>
+          <a href="/fourmis.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
       <div class="solution-card">
@@ -355,62 +354,62 @@
         </div>
         <div class="solution-card-body">
           <h3>Guêpes &amp; frelons</h3>
-          <p>Destruction de nids toutes hauteurs, intervention rapide 7j/7. Frelons asiatiques traités avec équipement spécialisé. Intervention dans tous les quartiers, y compris les parcs et jardins de Versailles.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <p>Destruction de nids toutes hauteurs, intervention rapide 7j/7. Frelons asiatiques traités avec équipement spécialisé. Intervention dans tous les quartiers, en particulier dans les parcs et espaces verts de Poissy (Beauregard, La Bruyère, Les Merisiers).</p>
+          <a href="/guepes-frelons.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== POURQUOI VERSAILLES ? ===== -->
+  <!-- ===== POURQUOI POISSY ? ===== -->
   <section class="trust-section">
     <div class="container">
       <div class="section-header">
-        <span class="overline">Pourquoi Versailles ?</span>
-        <h2>Les spécificités de la lutte anti-nuisibles à Versailles</h2>
-        <p class="section-subtitle">Une ville historique avec des défis uniques en matière de nuisibles</p>
+        <span class="overline">Pourquoi Poissy ?</span>
+        <h2>Les spécificités de la lutte anti-nuisibles à Poissy</h2>
+        <p class="section-subtitle">Une ville au bord de Seine avec des défis uniques en matière de nuisibles</p>
       </div>
       <div class="trust-grid">
         <div class="trust-card">
           <div class="trust-icon"><img src="/images/photos/rv-localisation.jpg" alt=""></div>
           <div>
-            <h4>Le Château et ses abords</h4>
-            <p>Le Château de Versailles attire <strong>7 millions de visiteurs par an</strong>. Les hôtels, restaurants et cafés à proximité sont particulièrement exposés aux nuisibles alimentaires (cafards, rats, souris). Nous proposons des contrats HACCP spécifiques pour ces établissements, avec des interventions discrètes et rapides pour ne pas perturber l'activité touristique.</p>
+            <h4>La Seine, autoroute à rats</h4>
+            <p>Longeant Poissy sur plusieurs kilomètres, la Seine constitue un <strong>corridor écologique idéal</strong> pour les rats. Les berges, les quais et les réseaux d'eaux pluviales qui se jettent dans le fleuve sont des voies de pénétration directes vers les habitations. Les quartiers <strong>Beauregard</strong> et <strong>Centre-Ville</strong> sont les plus exposés. Notre méthode combine dératisation chimique ciblée, rebouchage des accès et conseils de prévention pour une protection durable.</p>
           </div>
         </div>
         <div class="trust-card">
           <div class="trust-icon"><img src="/images/photos/rv-certifie.jpg" alt=""></div>
           <div>
-            <h4>Habitat ancien du centre</h4>
-            <p>Les quartiers <strong>Notre-Dame</strong> et <strong>Saint-Louis</strong> comptent de nombreux immeubles des XVIIe et XVIIIe siècles. Ces bâtiments anciens, avec leurs caves voûtées, leurs caves communicantes et leurs fissures structurelles, sont des refuges idéaux pour les rats et les punaises de lit. Nos techniciens sont formés aux contraintes des bâtiments classés.</p>
+            <h4>Centre-ville mixte et nuisibles</h4>
+            <p>Les restaurants du <strong>Centre-Ville</strong> de Poissy attirent rats et cafards. Le quartier <strong>La Maltournée</strong>, zone commerciale dynamique, est également exposé. La forte rotation des commerces et la présence de nombreux établissements de restauration favorisent la prolifération des blattes et des rongeurs. Nos techniciens interviennent dans les cuisines, les réserves et les caves avec des protocoles adaptés aux professionnels.</p>
           </div>
         </div>
         <div class="trust-card">
           <div class="trust-icon"><img src="/images/photos/rv-rapide.jpg" alt=""></div>
           <div>
-            <h4>Réseau d'égouts ancien</h4>
-            <p>Le réseau d'égouts de Versailles, en partie hérité du XIXe siècle, constitue un véritable <strong>autoroute à rats</strong> sous la ville. Les rats remontent régulièrement dans les caves par les canalisations endommagées. Notre approche combine dératisation chimique ciblée et travaux de <strong>rebouchage des accès</strong> pour une solution durable.</p>
+            <h4>Parcs et espaces verts</h4>
+            <p>Poissy dispose de nombreux parcs et jardins, dont le <strong>Parc Meissonier</strong> et le <strong>Parc du Prieuré</strong>, qui attirent les guêpes et les frelons en été. Les quartiers résidentiels <strong>Beauregard</strong>, <strong>La Bruyère</strong> et <strong>Les Merisiers</strong>, avec leurs espaces verts et leurs arbres matures, sont particulièrement exposés aux nids de frelons asiatiques. Nos techniciens sont équipés de perches télescopiques jusqu'à 12 mètres.</p>
           </div>
         </div>
         <div class="trust-card">
           <div class="trust-icon"><img src="/images/photos/rv-avis.jpg" alt=""></div>
           <div>
-            <h4>Restauration et tourisme</h4>
-            <p>Avec plus de <strong>200 restaurants et établissements</strong> dans le secteur du Château et du quartier Saint-Louis, la restauration Versaillaise fait face à des enjeux sanitaires majeurs. Les cafards et les rongeurs sont une menace constante. Nos contrats professionnels incluent un plan de sanitation HACCP complet et un registre de traitement à jour.</p>
+            <h4>Zone résidentielle pavillonnaire</h4>
+            <p>Les quartiers <strong>La Coudraie</strong>, <strong>Le Grand Poissy</strong> et <strong>La Bruyère</strong> sont principalement pavillonnaires, avec de nombreux jardins. Cette configuration expose les habitants aux <strong>fourmis</strong> (135€) et aux guêpes/frelons en été. Les jardins, les haies et les arbres fruitiers sont des lieux de prédilection pour les colonies de fourmis et les nids de frelons. Nous adaptons nos traitements à chaque configuration.</p>
           </div>
         </div>
         <div class="trust-card">
           <div class="trust-icon"><img src="/images/icon-eco.svg" alt=""></div>
           <div>
-            <h4>Zones pavillonnaires</h4>
-            <p>Les quartiers <strong>Porchefontaine</strong>, <strong>Satory</strong> et <strong>Montreuil</strong> sont majoritairement pavillonnaires. Les jardins et les espaces verts favorisent la présence de fourmis, guêpes et frelons. En été, les nids de frelons asiatiques sont fréquents. Nous intervenons rapidement dans ces zones résidentielles avec des méthodes respectueuses de l'environnement.</p>
+            <h4>40 983 habitants à protéger</h4>
+            <p>Avec plus de <strong>40 000 habitants</strong> répartis sur 7 quartiers, Poissy est une ville dynamique des Yvelines. Notre mission est de protéger les Pisciaquais contre tous les nuisibles, avec des interventions rapides, des tarifs transparents et un service client irréprochable. Nous connaissons parfaitement la ville et ses spécificités pour une efficacité maximale.</p>
           </div>
         </div>
         <div class="trust-card">
           <div class="trust-icon"><img src="/images/icon-payment.svg" alt=""></div>
           <div>
-            <h4>Prix adaptés aux Versaillais</h4>
-            <p>Nos tarifs sont conçus pour être <strong>accessibles à tous les habitants de Versailles</strong> : rats 165€, souris 135€, cafards 165€, punaises de lit dès 295€, fourmis 135€. Devis gratuit et sans engagement sous 24h. Paiement sécurisé par carte ou virement. Intervention possible le jour même pour les urgences.</p>
+            <h4>Prix adaptés aux Pisciaquais</h4>
+            <p>Nos tarifs sont conçus pour être <strong>accessibles à tous les habitants de Poissy</strong> : rats 165€, souris 135€, cafards 165€, punaises de lit dès 295€, fourmis 135€. Devis gratuit et sans engagement sous 24h. Paiement sécurisé par carte ou virement. Intervention possible le jour même pour les urgences.</p>
           </div>
         </div>
       </div>
@@ -422,58 +421,54 @@
     <div class="container">
       <div class="section-header">
         <span class="overline">Quartiers d'intervention</span>
-        <h2>Les 8 quartiers de Versailles couverts</h2>
-        <p class="section-subtitle">Nous intervenons dans tous les quartiers de Versailles, du centre historique aux zones pavillonnaires</p>
+        <h2>Les 7 quartiers de Poissy couverts</h2>
+        <p class="section-subtitle">Nous intervenons dans tous les quartiers de Poissy, du bord de Seine aux zones pavillonnaires</p>
       </div>
       <div class="zones-grid" style="grid-template-columns: repeat(4, 1fr);">
         <div class="zone-card" style="cursor:default;">
           <span class="dept">Centre</span>
-          <span class="city">Notre-Dame</span>
-        </div>
-        <div class="zone-card" style="cursor:default;">
-          <span class="dept">Centre</span>
-          <span class="city">Saint-Louis</span>
-        </div>
-        <div class="zone-card" style="cursor:default;">
-          <span class="dept">Ouest</span>
-          <span class="city">Montreuil</span>
+          <span class="city">Centre-Ville</span>
         </div>
         <div class="zone-card" style="cursor:default;">
           <span class="dept">Nord</span>
-          <span class="city">Clagny-Glatigny</span>
+          <span class="city">La Coudraie</span>
         </div>
         <div class="zone-card" style="cursor:default;">
           <span class="dept">Sud</span>
-          <span class="city">Porchefontaine</span>
-        </div>
-        <div class="zone-card" style="cursor:default;">
-          <span class="dept">Sud-Est</span>
-          <span class="city">Chantiers</span>
+          <span class="city">Beauregard</span>
         </div>
         <div class="zone-card" style="cursor:default;">
           <span class="dept">Est</span>
-          <span class="city">Bernard de Jussieu</span>
+          <span class="city">Le Grand Poissy</span>
         </div>
         <div class="zone-card" style="cursor:default;">
-          <span class="dept">Sud-Ouest</span>
-          <span class="city">Satory</span>
+          <span class="dept">Ouest</span>
+          <span class="city">La Bruyère</span>
+        </div>
+        <div class="zone-card" style="cursor:default;">
+          <span class="dept">Nord-Ouest</span>
+          <span class="city">Les Merisiers</span>
+        </div>
+        <div class="zone-card" style="cursor:default;">
+          <span class="dept">Ouest</span>
+          <span class="city">La Maltournée</span>
         </div>
       </div>
       <div style="text-align:center;margin-top:32px;">
         <p style="max-width:700px;margin:0 auto;color:var(--gray-400);font-size:0.9rem;">
-          Nous couvrons également les communes limitrophes : <strong>Le Chesnay-Rocquencourt</strong>, <strong>Viroflay</strong>, <strong>Marly-le-Roi</strong>, <strong>Saint-Cyr-l'École</strong>, <strong>Buc</strong>, <strong>Jouy-en-Josas</strong> et <strong>Guyancourt</strong>.
+          Nous couvrons également les communes limitrophes : <strong>Carrières-sous-Poissy</strong>, <strong>Orgeval</strong>, <strong>Villennes-sur-Seine</strong>, <strong>Les Mureaux</strong>, <strong>Verneuil-sur-Seine</strong> et <strong>Médan</strong>.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ===== TARIFS VERSAILLES ===== -->
+  <!-- ===== TARIFS POISSY ===== -->
   <section id="tarifs" class="pricing-section">
     <div class="container">
       <div class="section-header">
-        <span class="overline">Nos tarifs à Versailles</span>
+        <span class="overline">Nos tarifs à Poissy</span>
         <h2>Tarifs transparents, sans surprise</h2>
-        <p class="section-subtitle">Devis gratuit et sans engagement. Prix affichés clairement pour tous les Versaillais.</p>
+        <p class="section-subtitle">Devis gratuit et sans engagement. Prix affichés clairement pour tous les Pisciaquais.</p>
       </div>
       <div class="pricing-grid">
         <div class="pricing-table active" style="display:block;">
@@ -526,7 +521,7 @@
             <div class="price-row price-detail"><span class="service">✓ Nids accessibles et en hauteur</span><span></span></div>
             <div class="price-row price-detail"><span class="service">✓ Frelons asiatiques traités</span><span></span></div>
           </div>
-          <p class="price-note">* Tarifs TTC pour les particuliers à Versailles. Valables du 01/01/2026 au 31/12/2026 pour appartement < 50 m². Devis gratuit et sans engagement.</p>
+          <p class="price-note">* Tarifs TTC pour les particuliers à Poissy. Valables du 01/01/2026 au 31/12/2026 pour appartement < 50 m². Devis gratuit et sans engagement.</p>
         </div>
       </div>
     </div>
@@ -538,7 +533,7 @@
       <div class="section-header">
         <span class="overline" style="color: var(--accent);">Devis gratuit</span>
         <h2 style="color: var(--white);">Obtenez votre devis en 2 minutes</h2>
-        <p class="section-subtitle" style="color: var(--gray-300);">Réponse sous 24h ouvrées (2h en urgence à Versailles)</p>
+        <p class="section-subtitle" style="color: var(--gray-300);">Réponse sous 24h ouvrées (2h en urgence à Poissy)</p>
       </div>
       <div class="form-wrapper">
         <!-- Progress -->
@@ -554,7 +549,7 @@
           <!-- Étape 1 : Nuisible -->
           <div class="form-step active">
             <h3 class="step-title">Quel nuisible ?</h3>
-            <p style="color: var(--gray-400); margin-bottom: 1.5rem; font-size: 0.9rem;">Sélectionnez le type de nuisible qui vous pose problème à Versailles</p>
+            <p style="color: var(--gray-400); margin-bottom: 1.5rem; font-size: 0.9rem;">Sélectionnez le type de nuisible qui vous pose problème à Poissy</p>
             <div class="nuisible-grid">
               <div class="nuisible-option" data-value="Rats" role="button" tabindex="0"><img src="/images/photos/rv-rat.jpg" alt="" class="nuisible-icon-img"><span class="nuisible-label">Rats &amp; souris</span></div>
               <div class="nuisible-option" data-value="Punaises de lit" role="button" tabindex="0"><img src="/images/photos/rv-punaise.jpg" alt="" class="nuisible-icon-img"><span class="nuisible-label">Punaises de lit</span></div>
@@ -572,7 +567,7 @@
           <!-- Étape 2 : Lieu -->
           <div class="form-step">
             <h3 class="step-title">Type de lieu</h3>
-            <p style="color: var(--gray-400); margin-bottom: 1.5rem; font-size: 0.9rem;">Où se situe le problème à Versailles ?</p>
+            <p style="color: var(--gray-400); margin-bottom: 1.5rem; font-size: 0.9rem;">Où se situe le problème à Poissy ?</p>
             <div class="lieu-grid">
               <div class="lieu-option" data-value="Appartement" role="button" tabindex="0"><span class="lieu-icon">🏢</span><span class="lieu-label">Appartement</span></div>
               <div class="lieu-option" data-value="Maison" role="button" tabindex="0"><span class="lieu-icon">🏠</span><span class="lieu-label">Maison</span></div>
@@ -650,7 +645,7 @@
         <div class="form-success" id="formSuccess">
           <img src="/images/icon-check.svg" alt="" class="success-icon">
           <h3>Demande envoyée !</h3>
-          <p>Merci ! Votre demande de devis pour Versailles a bien été reçue. Nous vous recontacterons sous 24h ouvrées maximum.</p>
+          <p>Merci ! Votre demande de devis pour Poissy a bien été reçue. Nous vous recontacterons sous 24h ouvrées maximum.</p>
           <div class="success-actions">
             <p>Besoin urgent ?</p>
             <a href="tel:+33612515432" class="btn btn-primary"><img src="/images/icon-phone.svg" alt="" class="icn"> 06 12 51 54 32</a>
@@ -660,65 +655,65 @@
     </div>
   </section>
 
-  <!-- ===== TÉMOIGNAGES VERSAILLES ===== -->
+  <!-- ===== TÉMOIGNAGES POISSY ===== -->
   <section class="testimonials-section">
     <div class="container">
       <div class="section-header">
-        <span class="overline">Ils nous font confiance à Versailles</span>
-        <h2>Noté 4.8/5 par les Versaillais</h2>
-        <p class="section-subtitle">Plus de 2 800 clients satisfaits en Île-de-France, dont de nombreux Versaillais</p>
+        <span class="overline">Ils nous font confiance à Poissy</span>
+        <h2>Noté 4.8/5 par les Pisciaquais</h2>
+        <p class="section-subtitle">Plus de 2 800 clients satisfaits en Île-de-France, dont de nombreux Pisciaquais</p>
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <blockquote>"Plus de rats dans la cave ! L'équipe est venue rapidement, a rebouché tous les accès et fait un second passage gratuit. Je recommande vivement."</blockquote>
-          <div class="author">Philippe M.</div>
-          <div class="location">Quartier Notre-Dame • Rats</div>
+          <blockquote>"Des rats dans ma cave depuis des semaines, ils remontaient de la Seine. Intervention très rapide, le technicien a rebouché tous les accès et posé des appâts. Plus rien depuis 2 mois. Un grand merci à toute l'équipe !"</blockquote>
+          <div class="author">Sophie L.</div>
+          <div class="location">Quartier Centre-Ville • Rats</div>
         </div>
         <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <blockquote>"Le traitement punaises de lit a été radical. Le technicien était très professionnel et a pris le temps de tout m'expliquer. Résultat impeccable."</blockquote>
-          <div class="author">Claire D.</div>
-          <div class="location">Quartier Saint-Louis • Punaises de lit</div>
+          <blockquote>"Un nid de frelons asiatiques dans le grand arbre du jardin près du Parc Meissonier. Le technicien est intervenu le jour même et a détruit le nid avec une perche télescopique. Très professionnel et rassurant."</blockquote>
+          <div class="author">Philippe D.</div>
+          <div class="location">Quartier Beauregard • Guêpes/Frelons</div>
         </div>
         <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <blockquote>"Nous avions des cafards dans notre restaurant près du Château. Intervention discrète le matin avant l'ouverture. Propreté et efficacité au rendez-vous."</blockquote>
-          <div class="author">Antoine R.</div>
-          <div class="location">Quartier Château • Cafards</div>
+          <blockquote>"Des fourmis dans toute la maison depuis le printemps. Le technicien a traité les colonies et m'a donné des astuces pour éviter qu'elles ne reviennent. Excellent service et prix très correct."</blockquote>
+          <div class="author">Céline M.</div>
+          <div class="location">Quartier Les Merisiers • Fourmis</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FAQ LOCALE VERSAILLES ===== -->
+  <!-- ===== FAQ LOCALE POISSY ===== -->
   <section class="faq-section">
     <div class="container">
       <div class="section-header">
-        <span class="overline">FAQ Versailles</span>
-        <h2>Questions fréquentes sur la dératisation à Versailles</h2>
+        <span class="overline">FAQ Poissy</span>
+        <h2>Questions fréquentes sur la dératisation à Poissy</h2>
         <p class="section-subtitle">Tout ce que vous devez savoir avant de nous contacter</p>
       </div>
       <div style="max-width: 700px; margin: 0 auto;">
         <div class="faq-item">
-          <div class="faq-question">Y a-t-il beaucoup de rats à Versailles ?<span class="faq-arrow">▼</span></div>
-          <div class="faq-answer"><p>Oui, Versailles est confrontée à une présence significative de rats, notamment le long des réseaux d'égouts anciens du centre-ville et dans les zones de restauration près du Château. Les quartiers <strong>Notre-Dame</strong> et <strong>Saint-Louis</strong> sont particulièrement concernés. Notre intervention de dératisation (165€) comprend diagnostic, pose d'appâts rodenticides professionnels (Rubis Pasta), rebouchage des accès et second passage de suivi à 10-15 jours.</p></div>
+          <div class="faq-question">Y a-t-il beaucoup de rats à Poissy à cause de la Seine ?<span class="faq-arrow">▼</span></div>
+          <div class="faq-answer"><p>Oui, la proximité de la Seine est un facteur majeur de la présence de rats à Poissy. Les berges du fleuve offrent un habitat idéal pour les rongeurs, qui remontent vers les habitations des quartiers <strong>Beauregard</strong> et <strong>Centre-Ville</strong> via les réseaux d'eaux pluviales et d'égouts. Notre forfait dératisation (165€) comprend diagnostic complet, pose d'appâts rodenticides professionnels, rebouchage des accès et second passage de suivi à 10-15 jours.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Les punaises de lit sont-elles fréquentes dans le centre historique ?<span class="faq-arrow">▼</span></div>
-          <div class="faq-answer"><p>Les punaises de lit sont malheureusement courantes dans les logements anciens du centre historique de Versailles (quartiers <strong>Notre-Dame</strong>, <strong>Saint-Louis</strong>, <strong>Chantiers</strong>). La vétusté des bâtiments, les caves partagées et la forte rotation locative favorisent leur propagation. Nos traitements commencent à <strong>295€</strong> pour un studio avec vapeur sèche à 120°C et application de biocides homologués.</p></div>
+          <div class="faq-question">Y a-t-il beaucoup de guêpes dans les parcs de Poissy ?<span class="faq-arrow">▼</span></div>
+          <div class="faq-answer"><p>Oui, Poissy possède de nombreux espaces verts comme le <strong>Parc Meissonier</strong> et le <strong>Parc du Prieuré</strong>, ce qui attire les guêpes et les frelons, surtout en été. Les quartiers résidentiels comme <strong>Beauregard</strong>, <strong>La Bruyère</strong> et <strong>Les Merisiers</strong>, avec leurs jardins et leurs arbres, sont particulièrement exposés. Notre équipe intervient sous 2h avec du matériel spécialisé (perches télescopiques jusqu'à 12 mètres) pour détruire les nids en toute sécurité.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Intervenez-vous au Château de Versailles ?<span class="faq-arrow">▼</span></div>
-          <div class="faq-answer"><p>Oui, nous intervenons dans tous les établissements liés au domaine du Château de Versailles : hôtels, restaurants, musées et bâtiments administratifs du quartier du Château. Nos techniciens sont habilités à travailler dans les zones classées et respectent le protocole strict du site. Nous proposons des <strong>contrats HACCP</strong> pour les professionnels de la restauration autour du Château.</p></div>
+          <div class="faq-question">Prix pour punaises de lit dans un appartement à Poissy ?<span class="faq-arrow">▼</span></div>
+          <div class="faq-answer"><p>Pour un appartement dans le <strong>Centre-Ville</strong> de Poissy, nos tarifs sont : studio <strong>295€</strong>, 2 pièces <strong>395€</strong>, 3 pièces <strong>495€</strong>, 4 pièces et plus sur devis. Le traitement combine vapeur sèche à 120°C, biocides homologués et lavage du linge à haute température. Le Centre-Ville, avec ses immeubles anciens et caves partagées, est l'un des quartiers les plus touchés par les punaises de lit.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Quels quartiers de Versailles sont les plus touchés ?<span class="faq-arrow">▼</span></div>
-          <div class="faq-answer"><p>Le quartier <strong>Notre-Dame</strong> (centre historique) est le plus touché par les punaises de lit et les rats. <strong>Saint-Louis</strong> connaît des problèmes de cafards dans les restaurants. <strong>Porchefontaine</strong> et <strong>Satory</strong> sont confrontés aux fourmis et guêpes. <strong>Montreuil</strong> et <strong>Clagny-Glatigny</strong> voient des infestations de souris dans les copropriétés. Nous intervenons dans les <strong>8 quartiers</strong> de Versailles.</p></div>
+          <div class="faq-question">Intervention rapide dans les quartiers résidentiels de Poissy ?<span class="faq-arrow">▼</span></div>
+          <div class="faq-answer"><p>Absolument. Nous intervenons sous <strong>2h maximum</strong> dans tous les quartiers résidentiels : <strong>La Coudraie, Le Grand Poissy, La Bruyère, Les Merisiers</strong>. Ces secteurs sont confrontés aux fourmis (135€) et aux guêpes/frelons en été. Nos techniciens sont équipés de perches télescopiques jusqu'à 12 mètres pour détruire les nids en toute sécurité.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Proposez-vous des contrats HACCP pour les restaurants Versailles ?<span class="faq-arrow">▼</span></div>
-          <div class="faq-answer"><p>Absolument. Nous proposons des contrats de <strong>sanitation HACCP</strong> pour les restaurants, hôtels et cafés autour du Château de Versailles et dans tout le quartier Saint-Louis. Ces contrats incluent un diagnostic initial complet, des passages préventifs réguliers, un plan de lutte personnalisé et la tenue d'un registre de traitement conforme à la réglementation. Devis gratuit et sur-mesure.</p></div>
+          <div class="faq-question">Votre entreprise est-elle Certibiocide ?<span class="faq-arrow">▼</span></div>
+          <div class="faq-answer"><p>Oui, notre entreprise est <strong>certifiée Certibiocide</strong> conformément à la réglementation française. Tous nos techniciens sont titulaires du certificat individuel biocide (catégorie 3 : nuisibles). Nous utilisons uniquement des produits homologués par l'ANSES et respectons les doses autorisées. Notre certification est vérifiable sur demande, garantissant une prestation professionnelle et efficace.</p></div>
         </div>
       </div>
     </div>
@@ -727,8 +722,8 @@
   <!-- ===== CTA ===== -->
   <section class="cta-section">
     <div class="container">
-      <h2>Un nuisible à Versailles ? Agissez maintenant</h2>
-      <p>Ne laissez pas la situation s'aggraver. Un technicien peut intervenir chez vous en moins de 2h dans tous les quartiers de Versailles.</p>
+      <h2>Un nuisible à Poissy ? Agissez maintenant</h2>
+      <p>Ne laissez pas la situation s'aggraver. Un technicien peut intervenir chez vous en moins de 2h dans tous les quartiers de Poissy.</p>
       <div class="hero-actions" style="justify-content: center;">
         <a href="#devis" class="btn btn-primary btn-lg">Obtenir un devis gratuit</a>
         <a href="tel:+33612515432" class="btn btn-secondary btn-lg"><img src="/images/icon-phone.svg" alt="" class="icn"> Appeler</a>
@@ -750,23 +745,24 @@
         <div>
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="/#services">Dératisation</a></li>
-            <li><a href="/#services">Punaises de lit</a></li>
-            <li><a href="/#services">Cafards &amp; blattes</a></li>
-            <li><a href="/#services">Guêpes &amp; frelons</a></li>
-            <li><a href="/#services">Fourmis</a></li>
-            <li><a href="/#services">Dépigeonnage</a></li>
+            <li><a href="/deratisation.html">Dératisation</a></li>
+            <li><a href="/punaises-de-lit.html">Punaises de lit</a></li>
+            <li><a href="/cafards-blattes.html">Cafards &amp; blattes</a></li>
+            <li><a href="/guepes-frelons.html">Guêpes &amp; frelons</a></li>
+            <li><a href="/fourmis.html">Fourmis</a></li>
+            <li><a href="/depigeonnage.html">Dépigeonnage</a></li>
           </ul>
         </div>
         <div>
           <h4>Zones</h4>
           <ul class="footer-links">
-            <li><a href="/78-yvelines/versailles.html">Versailles (78)</a></li>
-            <li><a href="/#zones">Paris (75)</a></li>
-            <li><a href="/#zones">Hauts-de-Seine (92)</a></li>
-            <li><a href="/#zones">Seine-Saint-Denis (93)</a></li>
-            <li><a href="/#zones">Val-de-Marne (94)</a></li>
-            <li><a href="/#zones">Val-d'Oise (95)</a></li>
+            <li><a href="/78-yvelines/sartrouville.html">Sartrouville (78)</a></li>
+            <li><a href="/78-yvelines/poissy.html">Poissy (78)</a></li>
+            <li><a href="/75-paris.html">Paris (75)</a></li>
+            <li><a href="/92-hauts-de-seine.html">Hauts-de-Seine (92)</a></li>
+            <li><a href="/93-seine-saint-denis.html">Seine-Saint-Denis (93)</a></li>
+            <li><a href="/94-val-de-marne.html">Val-de-Marne (94)</a></li>
+            <li><a href="/95-val-doise.html">Val-d'Oise (95)</a></li>
           </ul>
         </div>
         <div>
@@ -774,8 +770,8 @@
           <ul class="footer-links">
             <li><a href="tel:+33612515432"><img src="/images/icon-phone.svg" alt="" class="icn"> 06 12 51 54 32</a></li>
             <li><a href="mailto:contact@traitement-des-nuisibles.fr" class="contact-email">contact@traitement-des-nuisibles.fr</a></li>
-            <li><a href="/#devis">Formulaire de contact</a></li>
-            <li><a href="/#tarifs">Nos tarifs</a></li>
+            <li><a href="/contact.html">Formulaire de contact</a></li>
+            <li><a href="/tarifs.html">Nos tarifs</a></li>
             <li><a href="/comment-ca-marche.html">Comment ça marche</a></li>
           </ul>
         </div>
@@ -783,7 +779,7 @@
       <div class="footer-bottom">
         <p>&copy; 2026 Dératisation IDF Pro — Tous droits réservés</p>
         <p><a href="/mentions-legales.html">Mentions légales</a> · <a href="/politique-confidentialite.html">Politique de confidentialité</a></p>
-        <p>Versailles | Yvelines | Île-de-France</p>
+        <p>Poissy | Yvelines | Île-de-France</p>
         <p class="photo-credit">Photos : <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a> (licence libre)</p>
       </div>
     </div>
@@ -792,7 +788,7 @@
   <!-- ===== URGENCE BAR ===== -->
   <div class="urgence-floating" id="urgenceBar">
     <button class="urgence-close">✕</button>
-    <p><img src="/images/icon-lightning.svg" alt="" class="icn" style="width:16px;height:16px"> Urgence nuisibles à Versailles ?</p>
+    <p><img src="/images/icon-lightning.svg" alt="" class="icn" style="width:16px;height:16px"> Urgence nuisibles à Poissy ?</p>
     <a href="tel:+33612515432" class="btn btn-primary btn-sm" style="width:100%"><img src="/images/icon-phone.svg" alt="" class="icn"> Appeler maintenant</a>
   </div>
 

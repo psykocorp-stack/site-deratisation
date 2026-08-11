@@ -18,8 +18,6 @@
   <meta name="twitter:description" content="Expert anti-nuisibles agréé en IDF. Devis gratuit, intervention 7j/7.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/libs/lenis.css">
-  <link rel="stylesheet" href="/css/cinematique.css">
   <link rel="icon" type="image/svg+xml" href="/images/icon-shield.svg">
   <link rel="apple-touch-icon" href="/images/logo-site.jpg">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -280,7 +278,6 @@
   </script>
 </head>
 <body >
-  <div class="scroll-progress" id="scrollProgress" data-parallax="0"></div>
 
   <!-- ===== HEADER ===== -->
   <header class="header" role="banner">
@@ -294,7 +291,7 @@
         <a href="#tarifs">Tarifs</a>
         <a href="#zones">Zones</a>
         <a href="#devis">Devis gratuit</a>
-        <a href="/#devis">Contact</a>
+        <a href="/contact.html">Contact</a>
         <a href="/comment-ca-marche.html">Comment ça marche</a>
         <a href="tel:+33612515432" class="btn btn-primary btn-sm"><img src="/images/icon-phone.svg" alt="" class="icn"> 06 12 51 54 32</a>
       </nav>
@@ -309,7 +306,7 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <h1 class="hero-title">Dératisation &amp; Traitement Nuisibles <span class="highlight">Île-de-France</span> — Intervention 7j/7 en moins de 2h</h1>
+          <h1>Dératisation & Traitement Nuisibles <span class="highlight">Île-de-France</span> — Intervention 7j/7 en moins de 2h</h1>
           <p>Service professionnel de dératisation et traitement des nuisibles en Île-de-France (Paris, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne, Essonne, Yvelines, Seine-et-Marne, Val-d'Oise). Techniciens certifiés Certibiocide, intervention rapide 7j/7. Traitement rats (165€), souris (135€), cafards (165€), punaises de lit (dès 295€), fourmis (135€), guêpes et frelons — devis gratuit sous 24h.</p>
           <div class="hero-badges">
             <span class="hero-badge"><span class="icon">✓</span> Intervention 7j/7</span>
@@ -350,49 +347,23 @@
     </div>
   </section>
 
-  <!-- ===== MARQUEE CINÉMATIQUE ===== -->
-  <div class="marquee-section" aria-hidden="true">
-    <div class="marquee-track" id="marqueeTrack">
-      <span class="marquee-item"><span class="dot">◆</span> Dératisation</span>
-      <span class="marquee-item"><span class="dot">◆</span> Punaises de lit</span>
-      <span class="marquee-item"><span class="dot">◆</span> Cafards &amp; blattes</span>
-      <span class="marquee-item"><span class="dot">◆</span> Guêpes &amp; frelons</span>
-      <span class="marquee-item"><span class="dot">◆</span> Fourmis</span>
-      <span class="marquee-item"><span class="dot">◆</span> Souris</span>
-      <span class="marquee-item"><span class="dot">◆</span> Rats</span>
-      <span class="marquee-item"><span class="dot">◆</span> Intervention 7j/7</span>
-      <span class="marquee-item"><span class="dot">◆</span> Devis gratuit</span>
-      <span class="marquee-item"><span class="dot">◆</span> Certibiocide</span>
-      <span class="marquee-item"><span class="dot">◆</span> Dératisation</span>
-      <span class="marquee-item"><span class="dot">◆</span> Punaises de lit</span>
-      <span class="marquee-item"><span class="dot">◆</span> Cafards &amp; blattes</span>
-      <span class="marquee-item"><span class="dot">◆</span> Guêpes &amp; frelons</span>
-      <span class="marquee-item"><span class="dot">◆</span> Fourmis</span>
-      <span class="marquee-item"><span class="dot">◆</span> Souris</span>
-      <span class="marquee-item"><span class="dot">◆</span> Rats</span>
-      <span class="marquee-item"><span class="dot">◆</span> Intervention 7j/7</span>
-      <span class="marquee-item"><span class="dot">◆</span> Devis gratuit</span>
-      <span class="marquee-item"><span class="dot">◆</span> Certibiocide</span>
-    </div>
-  </div>
-
   <!-- ===== STATS BAR ===== -->
   <section class="container" style="padding-top: 80px; padding-bottom: 20px;">
     <div class="stats-bar" itemscope itemtype="https://schema.org/aggregateRating">
-      <div class="stat-item" data-reveal>
-        <div class="stat-number" data-count="16">16</div>
+      <div class="stat-item">
+        <div class="stat-number">16</div>
         <div class="stat-label">Années d'expérience</div>
       </div>
-      <div class="stat-item" data-reveal>
-        <div class="stat-number" data-count="98" data-suffix="%">98%</div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
         <div class="stat-label">Clients satisfaits</div>
       </div>
-      <div class="stat-item" data-reveal>
-        <div class="stat-number" data-count="15">15</div>
+      <div class="stat-item">
+        <div class="stat-number">15</div>
         <div class="stat-label">Départements couverts</div>
       </div>
-      <div class="stat-item" data-reveal>
-        <div class="stat-number" data-count="24" data-suffix="h">24h</div>
+      <div class="stat-item">
+        <div class="stat-number">24h</div>
         <div class="stat-label">Intervention</div>
       </div>
     </div>
@@ -479,64 +450,64 @@
       <p class="section-subtitle">Des méthodes certifiées pour chaque type de nuisible, partout en Île-de-France</p>
     </div>
     <div class="solutions-grid">
-      <div class="solution-card" data-batch>
+      <div class="solution-card">
         <div class="solution-card-image" style="background-image: url('/images/photos/rv-rat.jpg')">
           <span class="solution-badge">À partir de 165€</span>
         </div>
         <div class="solution-card-body">
           <h3>Traitement rats</h3>
           <p>Diagnostic approfondi, pose d'appâts rodenticides professionnels (Rubis Pasta), rebouchage des accès et second passage de suivi à 10–15 jours.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <a href="/deratisation.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
-      <div class="solution-card" data-batch>
+      <div class="solution-card">
         <div class="solution-card-image" style="background-image: url('/images/photos/rv-souris.jpg')">
           <span class="solution-badge">À partir de 135€</span>
         </div>
         <div class="solution-card-body">
           <h3>Traitement souris</h3>
           <p>Diagnostic, pose d'appâts rodenticides (Racumin), rebouchage des accès et second passage de suivi pour une éradication complète.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <a href="/deratisation.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
-      <div class="solution-card" data-batch>
+      <div class="solution-card">
         <div class="solution-card-image" style="background-image: url('/images/photos/rv-punaise.jpg')">
           <span class="solution-badge">Dès 295€</span>
         </div>
         <div class="solution-card-body">
           <h3>Punaises de lit</h3>
           <p>Traitement par vapeur sèche (120°C) et application ciblée de biocides homologués. Forfait par pièce : studio 295€, 2 pièces 395€, 3 pièces 495€.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <a href="/punaises-de-lit.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
-      <div class="solution-card" data-batch>
+      <div class="solution-card">
         <div class="solution-card-image" style="background-image: url('/images/photos/rv-cafard.jpg')">
           <span class="solution-badge">À partir de 165€</span>
         </div>
         <div class="solution-card-body">
           <h3>Cafards &amp; blattes</h3>
           <p>Gel insecticide professionnel (Advion) et pulvérisation ciblée. Second passage de contrôle à 10–15 jours. Protection durable garantie.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <a href="/cafards-blattes.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
-      <div class="solution-card" data-batch>
+      <div class="solution-card">
         <div class="solution-card-image" style="background-image: url('/images/photos/rv-fourmis.jpg')">
           <span class="solution-badge">À partir de 135€</span>
         </div>
         <div class="solution-card-body">
           <h3>Fourmis</h3>
           <p>Traitement des colonies et chemins de fourmis par appâts et pulvérisation ciblée. Solution curative et préventive, résultat durable.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <a href="/fourmis.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
-      <div class="solution-card" data-batch>
+      <div class="solution-card">
         <div class="solution-card-image" style="background-image: url('/images/photos/rv-guepe.jpg')">
           <span class="solution-badge">Intervention</span>
         </div>
         <div class="solution-card-body">
           <h3>Guêpes &amp; frelons</h3>
           <p>Destruction de nids toutes hauteurs, intervention rapide 7j/7. Frelons asiatiques traités avec équipement spécialisé.</p>
-          <a href="/#services" class="solution-link">En savoir plus →</a>
+          <a href="/guepes-frelons.html" class="solution-link">En savoir plus →</a>
         </div>
       </div>
     </div>
@@ -631,11 +602,11 @@
         <p class="section-subtitle">8 départements couverts : Paris, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne, Essonne, Yvelines, Seine-et-Marne, Val-d'Oise</p>
       </div>
       <div class="zones-grid">
-        <a href="/#zones" class="zone-card"><span class="dept">75</span><span class="city">Paris</span></a>
-        <a href="/#zones" class="zone-card"><span class="dept">92</span><span class="city">Hauts-de-Seine</span></a>
-        <a href="/#zones" class="zone-card"><span class="dept">93</span><span class="city">Seine-Saint-Denis</span></a>
-        <a href="/#zones" class="zone-card"><span class="dept">94</span><span class="city">Val-de-Marne</span></a>
-        <a href="/#zones" class="zone-card"><span class="dept">95</span><span class="city">Val-d'Oise</span></a>
+        <a href="/75-paris.html" class="zone-card"><span class="dept">75</span><span class="city">Paris</span></a>
+        <a href="/92-hauts-de-seine.html" class="zone-card"><span class="dept">92</span><span class="city">Hauts-de-Seine</span></a>
+        <a href="/93-seine-saint-denis.html" class="zone-card"><span class="dept">93</span><span class="city">Seine-Saint-Denis</span></a>
+        <a href="/94-val-de-marne.html" class="zone-card"><span class="dept">94</span><span class="city">Val-de-Marne</span></a>
+        <a href="/95-val-doise.html" class="zone-card"><span class="dept">95</span><span class="city">Val-d'Oise</span></a>
         <a href="/78-yvelines.html" class="zone-card"><span class="dept">78</span><span class="city">Yvelines</span></a>
         <a href="/77-seine-et-marne.html" class="zone-card"><span class="dept">77</span><span class="city">Seine-et-Marne</span></a>
         <a href="/91-essonne.html" class="zone-card"><span class="dept">91</span><span class="city">Essonne</span></a>
@@ -812,7 +783,7 @@
       </div>
       <div class="blog-grid">
         <div class="blog-card">
-          <img class="blog-card-image" src="/images/photos/blog-punaise-v2.jpg" alt="Intervention anti-punaises de lit — vapeur sèche" loading="lazy" width="600" height="400">
+          <img class="blog-card-image" src="/images/photos/pexels-5900197.jpg" alt="Intervention anti-punaises de lit — vapeur sèche" loading="lazy" width="600" height="400">
           <div class="blog-card-body">
             <span class="blog-tag">Punaises de lit</span>
             <h3><a href="/blog/punaises-de-lit-guide-2026.html">Punaises de lit Paris 2026 — le guide complet</a></h3>
@@ -821,7 +792,7 @@
           </div>
         </div>
         <div class="blog-card">
-          <img class="blog-card-image" src="/images/photos/blog-rat-v2.jpg" alt="Local professionnel — inspection et traitement" loading="lazy" width="600" height="277">
+          <img class="blog-card-image" src="/images/photos/pexels-7123852.jpg" alt="Local professionnel — inspection et traitement" loading="lazy" width="600" height="277">
           <div class="blog-card-body">
             <span class="blog-tag">🍽️ Restauration</span>
             <h3><a href="/blog/deratisation-restaurant-obligations.html">Traitement restaurant : obligations HACCP et réglementation</a></h3>
@@ -830,7 +801,7 @@
           </div>
         </div>
         <div class="blog-card">
-          <img class="blog-card-image" src="/images/photos/blog-souris-v2.jpg" alt="Tarifs dératisation 2026" loading="lazy" width="600" height="400">
+          <img class="blog-card-image" src="/images/photos/pexels-8172912.jpg" alt="Tarifs dératisation 2026" loading="lazy" width="600" height="400">
           <div class="blog-card-body">
             <span class="blog-tag">Tarifs</span>
             <h3><a href="/blog/prix-deratisation-idf.html">Prix traitement nuisibles IDF : combien ça coûte vraiment ?</a></h3>
@@ -921,22 +892,22 @@
         <div>
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="/#services">Dératisation</a></li>
-            <li><a href="/#services">Punaises de lit</a></li>
-            <li><a href="/#services">Cafards &amp; blattes</a></li>
-            <li><a href="/#services">Guêpes &amp; frelons</a></li>
-            <li><a href="/#services">Fourmis</a></li>
-            <li><a href="/#services">Dépigeonnage</a></li>
+            <li><a href="/deratisation.html">Dératisation</a></li>
+            <li><a href="/punaises-de-lit.html">Punaises de lit</a></li>
+            <li><a href="/cafards-blattes.html">Cafards &amp; blattes</a></li>
+            <li><a href="/guepes-frelons.html">Guêpes &amp; frelons</a></li>
+            <li><a href="/fourmis.html">Fourmis</a></li>
+            <li><a href="/depigeonnage.html">Dépigeonnage</a></li>
           </ul>
         </div>
         <div>
           <h4>Zones</h4>
           <ul class="footer-links">
-            <li><a href="/#zones">Paris (75)</a></li>
-            <li><a href="/#zones">Hauts-de-Seine (92)</a></li>
-            <li><a href="/#zones">Seine-Saint-Denis (93)</a></li>
-            <li><a href="/#zones">Val-de-Marne (94)</a></li>
-            <li><a href="/#zones">Val-d'Oise (95)</a></li>
+            <li><a href="/75-paris.html">Paris (75)</a></li>
+            <li><a href="/92-hauts-de-seine.html">Hauts-de-Seine (92)</a></li>
+            <li><a href="/93-seine-saint-denis.html">Seine-Saint-Denis (93)</a></li>
+            <li><a href="/94-val-de-marne.html">Val-de-Marne (94)</a></li>
+            <li><a href="/95-val-doise.html">Val-d'Oise (95)</a></li>
           </ul>
         </div>
         <div>
@@ -944,8 +915,8 @@
           <ul class="footer-links">
             <li><a href="tel:+33612515432"><img src="/images/icon-phone.svg" alt="" class="icn"> 06 12 51 54 32</a></li>
             <li><a href="mailto:contact@traitement-des-nuisibles.fr" class="contact-email">contact@traitement-des-nuisibles.fr</a></li>
-            <li><a href="/#devis">Formulaire de contact</a></li>
-            <li><a href="/#tarifs">Nos tarifs</a></li>
+            <li><a href="/contact.html">Formulaire de contact</a></li>
+            <li><a href="/tarifs.html">Nos tarifs</a></li>
             <li><a href="/comment-ca-marche.html">Comment ça marche</a></li>
           </ul>
         </div>
@@ -967,11 +938,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="/libs/gsap.min.js"></script>
-  <script src="/libs/ScrollTrigger.min.js"></script>
-  <script src="/libs/lenis.min.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/formulaire.js"></script>
-  <script src="/js/cinematique.js"></script>
 </body>
 </html>

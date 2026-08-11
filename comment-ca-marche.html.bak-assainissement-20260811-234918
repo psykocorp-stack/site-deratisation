@@ -235,7 +235,7 @@
         <a href="/#tarifs">Tarifs</a>
         <a href="/#zones">Zones</a>
         <a href="/#devis">Devis gratuit</a>
-        <a href="/#devis">Contact</a>
+        <a href="/contact.html">Contact</a>
         <a href="/comment-ca-marche.html" class="active">Comment ça marche</a>
       </nav>
     </div>
@@ -464,7 +464,7 @@
           <ul class="footer-links">
             <li><a href="tel:+33612515432"><img src="/images/icon-phone.svg" alt="" class="icn"> 06 12 51 54 32</a></li>
             <li><a href="mailto:contact@traitement-des-nuisibles.fr"><img src="/images/icon-email.svg" alt="" class="icn"> contact@traitement-des-nuisibles.fr</a></li>
-            <li><a href="/#devis">Formulaire de contact</a></li>
+            <li><a href="/contact.html">Formulaire de contact</a></li>
             <li><a href="/#tarifs">Nos tarifs</a></li>
             <li><a href="/comment-ca-marche.html">Comment ça marche</a></li>
           </ul>
