@@ -4,3 +4,9 @@ node_modules/
 *.log
 .DS_Store
 .vercel
+
+# Artefacts générés par les boucles SEO/veille (régénérés à chaque cycle, ne pas versionner)
+.seo-report/autoamelioration/
+.seo-report/loop-state.json
+.seo-report/drafts/
+.seo-report/backlink-targets-current.json
