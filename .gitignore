@@ -10,3 +10,4 @@ node_modules/
 .seo-report/loop-state.json
 .seo-report/drafts/
 .seo-report/backlink-targets-current.json
+*.bak-*
