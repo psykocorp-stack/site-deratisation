@@ -758,6 +758,12 @@ p { margin-bottom: 1rem; color: var(--gray-500); }
   gap: 24px;
 }
 
+/* La note de bas de page tarifs s'étend sur toute la largeur de la grille,
+   pour ne pas rester coincée dans une seule colonne à gauche. */
+.pricing-grid .price-note {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 768px) {
   .pricing-grid { grid-template-columns: 1fr; }
   /* Confort mobile : cartes empilées avec un peu moins de padding,
