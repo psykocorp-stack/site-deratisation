@@ -760,8 +760,11 @@ p { margin-bottom: 1rem; color: var(--gray-500); }
 
 @media (max-width: 768px) {
   .pricing-grid { grid-template-columns: 1fr; }
+  /* Confort mobile : cartes empilées avec un peu moins de padding,
+     boutons/lignes plus aérés pour la lecture sur téléphone. */
+  .price-card { padding: 20px; }
+  .price-row { padding: 9px 0; }
 }
-
 .pricing-table {
   display: none;
 }
@@ -776,6 +779,18 @@ p { margin-bottom: 1rem; color: var(--gray-500); }
   border-radius: var(--radius-md);
   padding: 24px;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card h4 {
+  flex-shrink: 0;
+}
+
+/* Égalise les cartes d'une même rangée : l'élément carte
+   occupe toujours toute la hauteur de sa rangée (Grid stretch). */
+.price-card .price-row {
+  flex-shrink: 0;
 }
 
 .price-card:hover {
